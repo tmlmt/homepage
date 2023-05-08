@@ -1,15 +1,30 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "homepage",
+  "author": "Thomas Lamant <tom@tmlmt.com> (https://github.com/tmlmt)",
+  "description": "Homepage of Thomas Lamant",
+  "repository": "github:tmlmt/homepage",
+  "private": false,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --ext .ts,.js,.vue ."
   },
   "devDependencies": {
-    "@types/node": "^18",
-    "nuxt": "^3.4.3"
+    "@nuxt/image-edge": "1.0.0-28050764.aaee7ac",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/node": "16.18.26",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "nuxt": "^3.4.3",
+    "postcss-nesting": "^11.2.2",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "primeflex": "^3.3.0",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.28.0"
   }
 }
