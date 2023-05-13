@@ -6,7 +6,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="flex flex-column content justify-content-start">
+  <div class="flex flex-column content justify-content-start mx-5">
     <h1>Thomas Lamant</h1>
     <p>
       Hi! I am Thomas Lamant, an offshore wind engineer working at
@@ -20,18 +20,18 @@ definePageMeta({
     <p>
       Manual creatity has taken many forms over the years (woodworking, yoga, etc.),
       but I've particularly discoved a passion for leatherwork, that I hope one day to
-      be able to offer to a broader public through my own brand.
+      to bring to a broader public through my own brand.
     </p>
     <p>
       Since writing my first website more than 20 years ago in 2002, I've been
       fascinated by the power of software programming. Things have become much more
       powerful now, but also much more complex. While I play around in <span class="emphasis">Python/Pandas</span> for
-      small tasks or data analysis, it is web development that I've been exploring a lot,
-      most recently the <span class="emphasis">Nuxt</span> framework (Vue, Vite, Node.JS/Typescript).
+      small tasks or data analysis, it is web development that I've been exploring a lot recently,
+      especially with the <span class="emphasis">Nuxt</span> framework (Vue, Vite, Node.JS, Typescript).
     </p>
     <p>
       See the menu in the upper right corner for relevant links, and shortcuts to my social media accounts.
-      The best to contact me is by sending an e-mail. Cheers !
+      The best way to contact me is by sending an e-mail. Cheers !
     </p>
   </div>
 </template>
