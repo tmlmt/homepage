@@ -6,18 +6,49 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="flex w-full justify-content-center align-content-center">
-    <div class="grid justify-content-center">
-      <CardItem id="blog" alt="Blog" position="left" title="Blog" link="https://blog.tmlmt.com">
+  <div class="flex w-full">
+    <div class="grid grid-nogutter">
+      <CardItem
+        id="blog"
+        alt="Blog"
+        column="left"
+        row="top"
+        title="Blog"
+        :size="1477"
+        link="https://blog.tmlmt.com"
+      >
         Blog
       </CardItem>
-      <CardItem id="bodegamap" alt="Bodega Map" title="Bodega Map" link="https://www.bodegamap.com">
+      <CardItem
+        id="bodegamap"
+        alt="Bodega Map"
+        row="top"
+        title="Bodega Map"
+        :size="1139"
+        link="https://www.bodegamap.com"
+      >
         BodegaMap
       </CardItem>
-      <CardItem id="maraa" alt="Marå" position="left" title="Marå" link="https://www.maraa.dk">
+      <CardItem
+        id="maraa"
+        alt="Marå"
+        row="bottom"
+        column="left"
+        title="Marå"
+        :size="823"
+        link="https://www.maraa.dk"
+      >
         Maraa
       </CardItem>
-      <CardItem id="linkedin" alt="LinkedIn" title="LinkedIn" link="https://www.linkedin.com/in/thomas-lamant-9a28423b/" link-text="my LinkedIn profile">
+      <CardItem
+        id="linkedin"
+        alt="LinkedIn"
+        row="bottom"
+        title="LinkedIn"
+        :size="823"
+        link="https://www.linkedin.com/in/thomas-lamant-9a28423b/"
+        link-text="my LinkedIn profile"
+      >
         I work @Orsted as a Project Manager in Offshore Wind Power.
       </CardItem>
     </div>

@@ -3,23 +3,26 @@ const props = withDefaults(defineProps<{
   id: string,
   alt: string,
   title: string,
+  size: number,
   link: string,
   linkText?: string,
-  position?: 'left' | 'right' }>(), { position: 'right', linkText: '' })
+  column?: 'left' | 'right',
+  row: 'top' | 'bottom' }>(), { column: 'right', linkText: '' })
 </script>
 
 <template>
   <div
     :class="[
       'col-12 md:col-6 flex p-0 card',
-      props.position === 'left' ? 'md:justify-content-end' : '']"
+      props.column === 'left' ? 'md:justify-content-end' : '',
+      props.row === 'top' ? 'md:align-items-end' : 'md:align-items-start']"
   >
-    <div class="card-inner md:mx-2 mb-2">
+    <div class="card-inner md:mx-2 md:mb-2">
       <div>
-        <nuxt-img :src="`/cards/${props.id}.png`" width="398" :alt="props.alt" />
+        <nuxt-img :src="`/cards/${props.id}.png`" sizes="sm:100vw md:360px lg:450px" :alt="props.alt" />
       </div>
-      <div class="text-white surface-900 px-4 py-2 card-overlay">
-        <div class="flex flex-column justify-content-between h-full">
+      <div class="card-overlay text-white surface-900 px-4 py-2 h-full w-full absolute top-0 left-0 transition-ease-in-out transition-duration-500">
+        <div class="flex h-full flex-column justify-content-between">
           <div>
             <h2>{{ props.title }}</h2>
             <slot />
@@ -45,8 +48,6 @@ const props = withDefaults(defineProps<{
 
 .card-inner {
   position: relative;
-  width: 400px;
-  height: 400px;
   border: #e0e0e0 1px solid;
 
   &:hover .card-overlay {
@@ -54,13 +55,7 @@ const props = withDefaults(defineProps<{
   }
 
   & .card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     opacity: 0;
-    transition: 0.5s ease;
 
     & a {
       color: #ffffff;
