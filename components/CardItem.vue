@@ -63,6 +63,11 @@ const props = withDefaults(defineProps<{
       & i {
         font-size: 0.8rem;
       }
+
+      &:hover {
+        text-decoration: underline;
+        color: #ffffff
+      }
     }
   }
 }
