@@ -8,6 +8,11 @@ const props = withDefaults(defineProps<{
   linkText?: string,
   column?: 'left' | 'right',
   row: 'top' | 'bottom' }>(), { column: 'right', linkText: '' })
+
+const isOpaque = ref(false)
+const onClick = () => {
+  isOpaque.value = !isOpaque.value
+}
 </script>
 
 <template>
@@ -17,11 +22,14 @@ const props = withDefaults(defineProps<{
       props.column === 'left' ? 'md:justify-content-end' : '',
       props.row === 'top' ? 'md:align-items-end' : 'md:align-items-start']"
   >
-    <div class="card-inner md:mx-2 md:mb-2">
+    <div class="card-inner md:mx-2 md:mb-2" @click="onClick">
       <div>
         <nuxt-img :src="`/cards/${props.id}.png`" sizes="sm:100vw md:360px lg:450px" :alt="props.alt" />
       </div>
-      <div class="card-overlay text-white surface-900 px-4 py-2 h-full w-full absolute top-0 left-0 transition-ease-in-out transition-duration-500">
+      <div
+        :class="{'card-opaque': isOpaque}"
+        class="card-overlay text-white surface-900 px-4 py-2 h-full w-full absolute top-0 left-0 transition-ease-in-out transition-duration-500"
+      >
         <div class="flex h-full flex-column justify-content-between">
           <div>
             <h2>{{ props.title }}</h2>
@@ -70,5 +78,9 @@ const props = withDefaults(defineProps<{
       }
     }
   }
+}
+
+.card-opaque {
+  opacity: 1
 }
 </style>
