@@ -1,11 +1,9 @@
 <script setup lang="ts">
-const description = "Thomas Lamant's homepage"
-
 definePageMeta({
   title: 'Thomas Lamant',
-  description
+  description: "Thomas Lamant's homepage"
 })
-defineOgImageStatic({ description })
+defineOgImageStatic({ description: "Thomas Lamant's homepage" })
 </script>
 
 <template>

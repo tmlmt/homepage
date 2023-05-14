@@ -1,7 +1,7 @@
 {
   "name": "homepage",
   "author": "Thomas Lamant <tom@tmlmt.com> (https://github.com/tmlmt)",
-  "description": "Homepage of Thomas Lamant",
+  "description": "Thomas Lamant's homepage",
   "repository": "github:tmlmt/homepage",
   "private": false,
   "scripts": {
@@ -13,6 +13,7 @@
     "lint": "eslint --ext .ts,.js,.vue ."
   },
   "devDependencies": {
+    "@kevinmarrec/nuxt-pwa": "^0.17.0",
     "@nuxt/image-edge": "1.0.0-28050764.aaee7ac",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@types/node": "16.18.26",

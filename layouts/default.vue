@@ -3,10 +3,10 @@ const route = useRoute()
 
 useSeoMeta({
   author: 'Thomas Lamant',
-  charset: 'utf-8',
-  viewport: 'width=device-width, initial-scale=1',
   title: route.meta.title as string || 'Thomas Lamant',
-  description: route.meta.title as string || "Thomas Lamant's homepage"
+  ogTitle: route.meta.title as string || 'Thomas Lamant',
+  description: route.meta.description as string || "Thomas Lamant's homepage",
+  ogDescription: route.meta.description as string || "Thomas Lamant's homepage"
 })
 </script>
 
@@ -14,7 +14,9 @@ useSeoMeta({
   <div class="flex flex-column h-full w-full absolute">
     <HeaderBar />
     <div class="flex flex-auto mt-5 justify-content-center">
-      <slot />
+      <main>
+        <slot />
+      </main>
     </div>
     <FooterBar />
   </div>
