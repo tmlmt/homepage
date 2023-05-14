@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.0.1
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v1.0.0...v1.0.1)
+
+### 🩹 Fixes
+
+- **index:** Main content width ([9bd834b](https://github.com/tmlmt/homepage/commit/9bd834b))
+
+### ❤️  Contributors
+
+- Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
+
 ## v1.0.0
 
 ### 🚀 Enhancements
