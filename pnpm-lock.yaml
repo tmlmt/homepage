@@ -30,6 +30,9 @@ devDependencies:
   nuxt:
     specifier: ^3.4.3
     version: 3.4.3(@types/node@16.18.26)(eslint@8.40.0)(typescript@5.0.4)
+  nuxt-simple-robots:
+    specifier: ^2.3.0
+    version: 2.3.0
   postcss-nesting:
     specifier: ^11.2.2
     version: 11.2.2(postcss@8.4.23)
@@ -4459,6 +4462,18 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /nuxt-simple-robots@2.3.0:
+    resolution: {integrity: sha512-ZiDPycr/MAhaQ5KxAojCBJA37vzz1jg8yxNRmn1I38sHnYi8DWHIJyJKXYI+jatqgKyFrMhyQnvVTK+SOS0w2A==}
+    dependencies:
+      '@nuxt/kit': 3.4.3
+      defu: 6.1.2
+      pathe: 1.1.0
+      ufo: 1.1.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt@3.4.3(@types/node@16.18.26)(eslint@8.40.0)(typescript@5.0.4):

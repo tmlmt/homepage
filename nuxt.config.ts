@@ -10,10 +10,15 @@ export default defineNuxtConfig({
     'primeflex/primeflex.css',
     '~/assets/main.css'
   ],
-  modules: ['@nuxt/image-edge'],
+  modules: ['@nuxt/image-edge', 'nuxt-simple-robots'],
   postcss: {
     plugins: {
       'postcss-nesting': {}
+    }
+  },
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL
     }
   }
 })
