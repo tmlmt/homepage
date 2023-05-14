@@ -9,7 +9,7 @@ defineOgImageStatic({ description })
 </script>
 
 <template>
-  <div class="flex w-full">
+  <div class="flex w-full justify-content-center">
     <div class="grid grid-nogutter">
       <CardItem
         id="blog"
