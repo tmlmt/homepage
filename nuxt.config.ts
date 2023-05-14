@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     'primeflex/primeflex.css',
     '~/assets/main.css'
   ],
-  modules: ['@nuxt/image-edge', 'nuxt-simple-robots'],
+  modules: ['@nuxt/image-edge', 'nuxt-simple-robots', 'nuxt-simple-sitemap'],
   postcss: {
     plugins: {
       'postcss-nesting': {}

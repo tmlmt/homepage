@@ -20,6 +20,7 @@
     "eslint-config-prettier": "^8.8.0",
     "nuxt": "^3.4.3",
     "nuxt-simple-robots": "^2.3.0",
+    "nuxt-simple-sitemap": "^2.5.0",
     "postcss-nesting": "^11.2.2",
     "typescript": "^5.0.4"
   },
