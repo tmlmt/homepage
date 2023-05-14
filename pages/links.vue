@@ -1,8 +1,11 @@
 <script setup lang="ts">
+const description = "Thomas Lamant's personal projects and professional activities"
+
 definePageMeta({
   title: 'Thomas Lamant | Links',
-  description: "Thomas Lamant's personal projects and professional activities"
+  description
 })
+defineOgImageStatic({ description })
 </script>
 
 <template>
