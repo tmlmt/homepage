@@ -39,7 +39,11 @@ defineOgImageStatic({ description: "Thomas Lamant's homepage" })
 
 <style lang="postcss">
 .content {
-  width: 600px;
+  width: calc(100% - 4rem);
+
+  @media (min-width: 768px) {
+    width: 600px;
+  }
 }
 
 .emphasis {
