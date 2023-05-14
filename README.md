@@ -1,42 +1,17 @@
-# Nuxt 3 Minimal Starter
+# Homepage (open source)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Source code of [my homepage](https://www.tmlmt.com), made with [Nuxt](https://nuxt.com).
 
-## Setup
+## Fork
 
-Make sure to install the dependencies:
+If you want to work and reuse the code: 
+- Install pnpm (see [docs](https://pnpm.io/installation))
+- Clone the git repo
+- Install the dependencies: `pnpm install`
+- Start the development server: `pnpm dev`
+- Please keep mind the below licensing rules
 
-```bash
-# yarn
-yarn install
+## Licensing
 
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+code is licensed under [MIT](./LICENSE)
+words and graphics are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)
