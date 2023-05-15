@@ -13,7 +13,7 @@ useSeoMeta({
 <template>
   <div class="flex flex-column h-full w-full absolute">
     <HeaderBar />
-    <div class="flex flex-auto mt-5 justify-content-center">
+    <div class="flex flex-auto mt-5 content-container justify-content-center">
       <main>
         <slot />
       </main>
@@ -21,3 +21,11 @@ useSeoMeta({
     <FooterBar />
   </div>
 </template>
+
+<style lang="postcss">
+.content-container {
+  @media(max-width: 768px) {
+    margin-top: 0 !important;
+  }
+}
+</style>

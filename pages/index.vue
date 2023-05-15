@@ -44,28 +44,30 @@ defineOgImageStatic({ description: "Thomas Lamant's homepage" })
   @media (min-width: 768px) {
     width: 600px;
   }
-}
 
-.emphasis {
-  font-style: italic;
-  font-weight: 500;
-}
+  & h1 {
+    margin-top: 1rem;
+    font-size: 40px;
+  }
 
-h1 {
-  margin-top: 1rem;
-  font-size: 40px;
-}
+  & .emphasis {
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: underline;
+  }
 
-p {
-  line-height: 1.3;
+  & p {
+    line-height: 1.3;
 
-  & a, a:visited {
-    color: #458bfd;
-
-    &:hover {
+    & a, a:visited {
       color: #458bfd;
-      text-decoration: underline;
+
+      &:hover {
+        color: #458bfd;
+        text-decoration: underline;
+      }
     }
   }
 }
+
 </style>
