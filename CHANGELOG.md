@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.2.1
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v1.2.0...v1.2.1)
+
+### 📦 Build
+
+- Configure renovate ([e53526b](https://github.com/tmlmt/homepage/commit/e53526b))
+
 ## v1.2.0
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v1.1.1...v1.2.0)
