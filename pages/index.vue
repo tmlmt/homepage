@@ -11,12 +11,12 @@ defineOgImageStatic({ description: "Thomas Lamant's homepage" })
     <h1 class="text-gradient">Thomas Lamant</h1>
     <p>
       Hi! I am Thomas Lamant, an offshore wind engineer working at
-      <a href="https://www.orsted.com" target="_blank">Ørsted</a>.
+      <a href="https://www.orsted.com" class="emphasis" target="_blank">Ørsted</a>.
     </p>
     <p>
       When onshore, I love exploring all sorts of ideas. And it happens
       sometimes that I feel like writing an article about it in my
-      <span class="emphasis">blog</span>.
+      <a href="https://blog.tmlmt.com" class="emphasis" target="_blank">blog</a>.
     </p>
     <p>
       Manual creatity has taken many forms over the years (woodworking, yoga, etc.),
@@ -28,7 +28,7 @@ defineOgImageStatic({ description: "Thomas Lamant's homepage" })
       fascinated by the power of software programming. Things have become much more
       powerful now, but also much more complex. While I play around in <span class="emphasis">Python/Pandas</span> for
       small tasks or data analysis, it is web development that I've been exploring a lot recently,
-      especially with the <span class="emphasis">Nuxt</span> framework (Vue, Vite, Node.JS, Typescript).
+      especially with the <a href="https://nuxt.com" class="emphasis" target="_blank">Nuxt</a> framework (Vue, Vite, Node.JS, Typescript).
     </p>
     <p>
       See the menu in the upper right corner for relevant links, and shortcuts to my social media accounts.

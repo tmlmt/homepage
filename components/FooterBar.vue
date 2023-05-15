@@ -7,7 +7,7 @@
 <style lang="postcss">
 .footer {
   @media (max-width: 768px) {
-    margin-top: 2rem !important;
+    margin-top: 2.5rem !important;
   }
 }
 </style>

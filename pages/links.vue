@@ -18,7 +18,7 @@ defineOgImageStatic({ description: "Thomas Lamant's personal projects and profes
         :size="1477"
         link="https://blog.tmlmt.com"
       >
-        Self-hosted blog powered by <a href="https://ghost.org/" target="_blank"><b>Ghost</b></a>, where
+        Self-hosted blog powered by <a href="https://ghost.org/" target="_blank">Ghost</a>, where
         I sometimes take the time to write and share thoughts on topics that come to mind.
       </LinkItem>
       <LinkItem
@@ -30,7 +30,7 @@ defineOgImageStatic({ description: "Thomas Lamant's personal projects and profes
         link="https://www.bodegamap.com"
       >
         Discover Denmark's traditional pubs on an interactive map and find the ones closest to you!
-        A self-hosted project powered by <a href="https://nuxt.com" target="_blank"><b>Nuxt</b></a>.
+        A self-hosted project powered by <a href="https://nuxt.com" target="_blank">Nuxt</a>.
       </LinkItem>
       <LinkItem
         id="maraa"
@@ -54,7 +54,7 @@ defineOgImageStatic({ description: "Thomas Lamant's personal projects and profes
         link="https://www.linkedin.com/in/thomas-lamant-9a28423b/"
         link-text="my LinkedIn profile"
       >
-        I currently 3work @<a href="https://orsted.com/" target="_blank"><b>Ørsted</b></a> as a Project Manager in Offshore Wind Power.
+        I currently work <a href="https://orsted.com/" target="_blank">Ørsted</a> as a Project Manager in Offshore Wind Power.
       </LinkItem>
     </div>
   </div>

@@ -62,7 +62,7 @@ const onEnter = () => {
           </div>
           <div>
             <p>
-              <a :href="props.link" target="_blank"><i class="pi pi-external-link mr-1" /> Go to {{ props.linkText ? props.linkText : props.link }}</a>
+              <a :href="props.link" class="explicit-link" target="_blank"><i class="pi pi-external-link mr-1" /> Go to {{ props.linkText ? props.linkText : props.link }}</a>
             </p>
           </div>
         </div>
@@ -100,13 +100,19 @@ const onEnter = () => {
 
       & a {
         color: #ffffff;
+        text-decoration: underline;
+        font-weight: bold;
+
+        &.explicit-link {
+          text-decoration: none;
+          font-weight: normal;
+        }
 
         & i {
           font-size: 0.8rem;
         }
 
         &:hover {
-          text-decoration: underline;
           color: #ffffff
         }
       }
