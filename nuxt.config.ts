@@ -41,6 +41,13 @@ export default defineNuxtConfig({
       theme_color: '#666666'
     }
   },
+  robots: {
+    indexable: true,
+    disallowNonIndexableRoutes: true
+  },
+  routeRules: {
+    '/cards/**': { index: false }
+  },
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL
