@@ -50,8 +50,12 @@ defineOgImageStatic({ description: "Thomas Lamant's homepage" })
   }
 
   & h1 {
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 40px;
+
+    @media (max-width: 768px) {
+      margin-top: 1.5rem;
+    }
   }
 
   & .emphasis {

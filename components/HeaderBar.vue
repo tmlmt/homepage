@@ -3,7 +3,7 @@ import logoSrc from '~/assets/logo.svg'
 </script>
 
 <template>
-  <div class="grid justify-content-between align-content-center header m-3">
+  <div class="grid justify-content-between align-content-center m-3">
     <div class="col-4 flex align-items-center">
       <NuxtLink to="/"><img :src="logoSrc" width="40" alt="Logo"></NuxtLink>
     </div>
@@ -16,11 +16,3 @@ import logoSrc from '~/assets/logo.svg'
     </div>
   </div>
 </template>
-
-<style lang="postcss">
-.header {
-  @media (max-width: 768px) {
-    margin-bottom: 0;
-  }
-}
-</style>
