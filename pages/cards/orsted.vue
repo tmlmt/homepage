@@ -9,7 +9,11 @@ definePageMeta({
 <template>
   <div class="flex flex-column justify-content-center h-full card">
     <div class="card-header">
-      <nuxt-img src="/cards/orsted_bg.jpg" sizes="sm:100vw md:768px" alt="On top of a 2MW Wind Turbine in France" />
+      <nuxt-img
+        src="/cards/offshorewind_bg_768px.jpg"
+        sizes="sm:100vw md:768px"
+        title="Credit: Nicholas Doherty via Unsplash"
+      />
       <nuxt-img src="/cards/orsted_profile-pic.png" sizes="sm:30vw md:150px" class="profile-pic" alt="Thomas Lamant" />
     </div>
     <div class="grid h-full mx-2 mb-5">
@@ -70,7 +74,7 @@ p {
     height: 60vw;
 
     @media (min-width: 769px) {
-      height: 380px;
+      height: 400px;
     }
   }
 
