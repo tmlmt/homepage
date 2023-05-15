@@ -50,10 +50,10 @@ body {
 }
 
 a, a:visited {
-  color: #458bfd;
+  color: #024FCA;
 
   &:hover {
-    color: #458bfd;
+    color: #024FCA;
     text-decoration: underline;
   }
 }
