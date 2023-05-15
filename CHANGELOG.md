@@ -1,5 +1,32 @@
 # Changelog
 
+## v1.1.0
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v1.0.0...v1.1.0)
+
+### 🚀 Enhancements
+
+- Ørsted business card ([1bf5682](https://github.com/tmlmt/homepage/commit/1bf5682))
+
+### 🩹 Fixes
+
+- **index:** Main content width ([9bd834b](https://github.com/tmlmt/homepage/commit/9bd834b))
+- **links:** Card overlay on all devices ([816c5a1](https://github.com/tmlmt/homepage/commit/816c5a1), [63a7fd3](https://github.com/tmlmt/homepage/commit/63a7fd3))
+- **links:** Borders on mobile ([cde5b08](https://github.com/tmlmt/homepage/commit/cde5b08))
+- **style:** Vertical alignment of card set ([6f6596c](https://github.com/tmlmt/homepage/commit/6f6596c))
+
+### 💅 Refactors
+
+- Rename CardItem to LinkItem and cards to links ([c53fcf8](https://github.com/tmlmt/homepage/commit/c53fcf8))
+
+### 🏡 Chore
+
+- **release:** V1.0.1 ([785e06e](https://github.com/tmlmt/homepage/commit/785e06e))
+
+### ❤️  Contributors
+
+- Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
+
 ## v1.0.1
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v1.0.0...v1.0.1)
