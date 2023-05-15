@@ -9,7 +9,7 @@
     "group:postcss",
     "group:nuxtjsMonorepo"
   ],
-  "schedule": ["every week"],
+  "schedule": ["every weekend"],
   "timezone": "Europe/Copenhagen",
   "packageRules": [
     {
