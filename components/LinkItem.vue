@@ -49,7 +49,7 @@ const onEnter = () => {
   >
     <div class="card-inner md:mx-2 md:mb-2" @click="onClick" @mouseenter="onEnter" @mouseleave="onLeave">
       <div>
-        <nuxt-img :src="`/cards/${props.id}.png`" sizes="sm:100vw md:360px lg:400px" :alt="props.alt" />
+        <nuxt-img :src="`/links/${props.id}.png`" sizes="sm:100vw md:360px lg:400px" :alt="props.alt" />
       </div>
       <div
         class="card-overlay text-white surface-900 px-4 py-2 h-full w-full absolute top-0 left-0 transition-ease-in-out transition-duration-500"

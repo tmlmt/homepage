@@ -9,7 +9,7 @@ defineOgImageStatic({ description: "Thomas Lamant's personal projects and profes
 <template>
   <div class="flex h-full w-full justify-content-center">
     <div class="grid grid-nogutter">
-      <CardItem
+      <LinkItem
         id="blog"
         alt="Blog"
         column="left"
@@ -20,8 +20,8 @@ defineOgImageStatic({ description: "Thomas Lamant's personal projects and profes
       >
         Self-hosted blog powered by <a href="https://ghost.org/" target="_blank"><b>Ghost</b></a>, where
         I sometimes take the time to write and share thoughts on topics that come to mind.
-      </CardItem>
-      <CardItem
+      </LinkItem>
+      <LinkItem
         id="bodegamap"
         alt="Bodega Map"
         row="top"
@@ -31,8 +31,8 @@ defineOgImageStatic({ description: "Thomas Lamant's personal projects and profes
       >
         Discover Denmark's traditional pubs on an interactive map and find the ones closest to you!
         A self-hosted project powered by <a href="https://nuxt.com" target="_blank"><b>Nuxt</b></a>.
-      </CardItem>
-      <CardItem
+      </LinkItem>
+      <LinkItem
         id="maraa"
         alt="Marå"
         row="bottom"
@@ -44,8 +44,8 @@ defineOgImageStatic({ description: "Thomas Lamant's personal projects and profes
         <p>My Denmark-based, privately held company dedicated to making and selling leatherwork.</p>
         <p>CVR: 41983043</p>
         <p>Company sheet: <a href="https://datacvr.virk.dk/enhed/virksomhed/41983043" target="_blank">Virk.dk</a></p>
-      </CardItem>
-      <CardItem
+      </LinkItem>
+      <LinkItem
         id="linkedin"
         alt="LinkedIn"
         row="bottom"
@@ -55,7 +55,7 @@ defineOgImageStatic({ description: "Thomas Lamant's personal projects and profes
         link-text="my LinkedIn profile"
       >
         I currently 3work @<a href="https://orsted.com/" target="_blank"><b>Ørsted</b></a> as a Project Manager in Offshore Wind Power.
-      </CardItem>
+      </LinkItem>
     </div>
   </div>
 </template>
