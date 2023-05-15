@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.3.1
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v1.3.0...v1.3.1)
+
+### 📦 Build
+
+- Add pnpm as packageManager ([67a2a94](https://github.com/tmlmt/homepage/commit/67a2a94))
+- Create ci-cd Github Action ([4e07ea1](https://github.com/tmlmt/homepage/commit/4e07ea1))
+- Update source dir ([6f222bb](https://github.com/tmlmt/homepage/commit/6f222bb))
+
+### ❤️  Contributors
+
+- Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
+
 ## v1.3.0
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v1.2.2...v1.3.0)
