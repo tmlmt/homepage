@@ -8,7 +8,7 @@ defineOgImageStatic({ description: "Thomas Lamant's homepage" })
 
 <template>
   <div class="flex flex-column content justify-content-start mx-5">
-    <h1>Thomas Lamant</h1>
+    <h1 class="text-gradient">Thomas Lamant</h1>
     <p>
       Hi! I am Thomas Lamant, an offshore wind engineer working at
       <a href="https://www.orsted.com" target="_blank">Ørsted</a>.
@@ -52,13 +52,8 @@ defineOgImageStatic({ description: "Thomas Lamant's homepage" })
 }
 
 h1 {
-  display: inline-block;
   margin-top: 1rem;
   font-size: 40px;
-  background: linear-gradient(to right,#458bfd 0%, #eb7ca7 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 p {
