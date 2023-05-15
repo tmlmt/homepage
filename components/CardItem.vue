@@ -9,9 +9,34 @@ const props = withDefaults(defineProps<{
   column?: 'left' | 'right',
   row: 'top' | 'bottom' }>(), { column: 'right', linkText: '' })
 
+// Managing card overlay opacity
+// - Laptops:
+//     css :hover ensures normal behavior
+// - Mobile:
+//     onClick enables forced mode and toggles opacity
+//     onEnter remembers opacity value when entering forced mode; sets isEnter on to detect Chrome behavior
+//       (on Chrome: click = mouseenter + click; on Firefox: click = click)
+//     onLeave resets opacity (to 0) and forced mode (to disabled) so that we can hover again
+
 const isOpaque = ref(false)
+const isClick = ref()
+const isEnter = ref()
 const onClick = () => {
-  isOpaque.value = !isOpaque.value
+  isClick.value = true
+  if (isEnter.value) {
+    isOpaque.value = true
+  } else {
+    isOpaque.value = !isOpaque.value
+  }
+  isEnter.value = false
+}
+const onLeave = () => {
+  isClick.value = false
+  isOpaque.value = false
+}
+const onEnter = () => {
+  isEnter.value = true
+  isOpaque.value = true
 }
 </script>
 
@@ -22,13 +47,13 @@ const onClick = () => {
       props.column === 'left' ? 'md:justify-content-end' : '',
       props.row === 'top' ? 'md:align-items-end' : 'md:align-items-start']"
   >
-    <div class="card-inner md:mx-2 md:mb-2" @click="onClick">
+    <div class="card-inner md:mx-2 md:mb-2" @click="onClick" @mouseenter="onEnter" @mouseleave="onLeave">
       <div>
-        <nuxt-img :src="`/cards/${props.id}.png`" sizes="sm:100vw md:360px lg:450px" :alt="props.alt" />
+        <nuxt-img :src="`/cards/${props.id}.png`" sizes="sm:100vw md:360px lg:400px" :alt="props.alt" />
       </div>
       <div
-        :class="{'card-opaque': isOpaque}"
         class="card-overlay text-white surface-900 px-4 py-2 h-full w-full absolute top-0 left-0 transition-ease-in-out transition-duration-500"
+        :class="{'card-opaque' : isOpaque && isClick, 'card-transparent': !isOpaque && isClick}"
       >
         <div class="flex h-full flex-column justify-content-between">
           <div>
@@ -56,7 +81,15 @@ const onClick = () => {
 
 .card-inner {
   position: relative;
-  border: #e0e0e0 1px solid;
+
+  @media (max-width: 768px) {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-bottom: #666666 1px solid;
+  }
+  @media (min-width: 769px) {
+    border: #e0e0e0 1px solid;
+  }
 
   &:hover .card-overlay {
     opacity: 1;
@@ -81,6 +114,10 @@ const onClick = () => {
 }
 
 .card-opaque {
-  opacity: 1
+  opacity: 1 !important
+}
+
+.card-transparent {
+  opacity: 0 !important
 }
 </style>
