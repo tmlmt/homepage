@@ -19,10 +19,6 @@
 
 - Rename CardItem to LinkItem and cards to links ([c53fcf8](https://github.com/tmlmt/homepage/commit/c53fcf8))
 
-### 🏡 Chore
-
-- **release:** V1.0.1 ([785e06e](https://github.com/tmlmt/homepage/commit/785e06e))
-
 ### ❤️  Contributors
 
 - Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
