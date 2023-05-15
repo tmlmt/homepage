@@ -13,23 +13,23 @@
     "lint": "eslint --ext .ts,.js,.vue ."
   },
   "devDependencies": {
-    "@kevinmarrec/nuxt-pwa": "^0.17.0",
+    "@kevinmarrec/nuxt-pwa": "0.17.0",
     "@nuxt/image-edge": "1.0.0-28050764.aaee7ac",
-    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@types/node": "16.18.26",
-    "eslint": "^8.40.0",
-    "eslint-config-prettier": "^8.8.0",
-    "nuxt": "^3.4.3",
+    "eslint": "8.40.0",
+    "eslint-config-prettier": "8.8.0",
+    "nuxt": "3.4.3",
     "nuxt-og-image": "2.0.0-beta.40",
-    "nuxt-simple-robots": "^2.3.0",
-    "nuxt-simple-sitemap": "^2.5.0",
-    "postcss-nesting": "^11.2.2",
-    "typescript": "^5.0.4"
+    "nuxt-simple-robots": "2.3.0",
+    "nuxt-simple-sitemap": "2.5.0",
+    "postcss-nesting": "11.2.2",
+    "typescript": "5.0.4"
   },
   "dependencies": {
-    "primeflex": "^3.3.0",
-    "primeicons": "^6.0.1",
-    "primevue": "^3.28.0"
+    "primeflex": "3.3.0",
+    "primeicons": "6.0.1",
+    "primevue": "3.29.1"
   },
   "version": "1.2.0"
 }
