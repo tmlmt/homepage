@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.3.0
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v1.2.2...v1.3.0)
+
+### 🚀 Enhancements
+
+- **orsted:** New background image ([951aacf](https://github.com/tmlmt/homepage/commit/951aacf))
+- **orsted:** Add LinkedIn profile ([e945b4a](https://github.com/tmlmt/homepage/commit/e945b4a))
+
+### 🩹 Fixes
+
+ - **orsted:** Better icons ([59e3dca](https://github.com/tmlmt/homepage/commit/59e3dca))
+
+### ❤️  Contributors
+
+- Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
+
 ## v1.2.2
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v1.2.1...v1.2.2)
