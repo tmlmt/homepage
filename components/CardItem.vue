@@ -77,37 +77,38 @@ const onEnter = () => {
   @media (max-width: 768px) {
     justify-content: center;
   }
-}
 
-.card-inner {
-  position: relative;
-
-  @media (max-width: 768px) {
-    padding-bottom: 2px;
-    padding-top: 2px;
-    border-bottom: #666666 1px solid;
-  }
-  @media (min-width: 769px) {
-    border: #e0e0e0 1px solid;
+  &:not(:last-of-type) {
+    @media (max-width: 768px) {
+      border-bottom: #666666 1px solid;
+    }
   }
 
-  &:hover .card-overlay {
-    opacity: 1;
-  }
+  & .card-inner {
+    position: relative;
 
-  & .card-overlay {
-    opacity: 0;
+    @media (min-width: 769px) {
+      border: #e0e0e0 1px solid;
+    }
 
-    & a {
-      color: #ffffff;
+    &:hover .card-overlay {
+      opacity: 1;
+    }
 
-      & i {
-        font-size: 0.8rem;
-      }
+    & .card-overlay {
+      opacity: 0;
 
-      &:hover {
-        text-decoration: underline;
-        color: #ffffff
+      & a {
+        color: #ffffff;
+
+        & i {
+          font-size: 0.8rem;
+        }
+
+        &:hover {
+          text-decoration: underline;
+          color: #ffffff
+        }
       }
     }
   }
