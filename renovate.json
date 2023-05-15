@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:js-app",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)",
+    "group:definitelyTyped",
+    "group:linters",
+    "group:postcss",
+    "group:nuxtjsMonorepo"
+  ],
+  "schedule": ["every weekend"],
+  "timezone": "Europe/Copenhagen",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["pin"],
+      "groupName": "pin"
+    },
+    {
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "<=16"
+    }
+  ],
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageAction": "bump"
+}
