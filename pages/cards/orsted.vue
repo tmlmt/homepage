@@ -17,7 +17,7 @@ definePageMeta({
       <nuxt-img src="/cards/orsted_profile-pic.png" sizes="sm:30vw md:150px" class="profile-pic" alt="Thomas Lamant" />
     </div>
     <div class="grid h-full mx-2 mb-5">
-      <div class="col-12 flex flex-column align-items-center">
+      <div class="col-12 flex flex-column align-items-center mb-3">
         <h1 class="my-0 text-gradient-blue">Thomas Lamant</h1>
         <p>Project Manager <b>@</b> <span class="orsted-blue">Orsted</span></p>
       </div>
@@ -28,11 +28,13 @@ definePageMeta({
       <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-map-marker" /></div>
       <div class="col-10"><p>Nesa Allé 1<br>2820 Gentofte<br>Denmark</p></div>
       <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-envelope" /></div>
-      <div class="col-10"><a href="mailto:thlam@orsted.com">thlam@orsted.com</a></div>
+      <div class="col-10"><p><a href="mailto:thlam@orsted.com">thlam@orsted.com</a></p></div>
       <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-phone" /></div>
-      <div class="col-10"><a href="tel:+4599559068">+45 99 55 90 68</a></div>
+      <div class="col-10"><p><a href="tel:+4599559068">+45 99 55 90 68</a></p></div>
+      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-linkedin" /></div>
+      <div class="col-10"><p><a href="https://www.linkedin.com/in/thomas-lamant-9a28423b/">LinkedIn Profile</a></p></div>
       <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-download" /></div>
-      <div class="col-10"><a href="mailto:thlam@orsted.com"><a href="/cards/ThomasLamant_Orsted.vcf">Download Vcard</a></a></div>
+      <div class="col-10"><p><a href="/cards/ThomasLamant_Orsted.vcf">Download Vcard</a></p></div>
     </div>
   </div>
 </template>
@@ -57,8 +59,8 @@ a, a:visited {
 }
 
 p {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .card {
