@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.1.1
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v1.1.0...v1.1.1)
+
+### 🩹 Fixes
+
+- Remove business cards from sitemap and robots.txt ([2c9878e](https://github.com/tmlmt/homepage/commit/2c9878e))
+- Changelog ([c606f50](https://github.com/tmlmt/homepage/commit/c606f50))
+
+### ❤️  Contributors
+
+- Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
+
 ## v1.1.0
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v1.0.0...v1.1.0)
