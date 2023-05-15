@@ -21,9 +21,9 @@ definePageMeta({
         <h1 class="my-0 text-gradient-blue">Thomas Lamant</h1>
         <p>Project Manager <b>@</b> <span class="orsted-blue">Orsted</span></p>
       </div>
-      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-user" /></div>
+      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-briefcase" /></div>
       <div class="col-10"><p>Head of Product Development<br>Product Line Foundations</p></div>
-      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-user" /></div>
+      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-users" /></div>
       <div class="col-10"><p>Innovation Project Management<br>Strategy, Innovation, Portfolio & Partnership</p></div>
       <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-map-marker" /></div>
       <div class="col-10"><p>Nesa Allé 1<br>2820 Gentofte<br>Denmark</p></div>
