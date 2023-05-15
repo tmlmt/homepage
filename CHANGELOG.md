@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.2.2
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v1.2.1...v1.2.2)
+
+### 🩹 Fixes
+
+- **index:** Title top margin ([4ff6a1c](https://github.com/tmlmt/homepage/commit/4ff6a1c))
+
+### ❤️  Contributors
+
+- Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
+
 ## v1.2.1
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v1.2.0...v1.2.1)
