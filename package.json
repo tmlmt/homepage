@@ -16,7 +16,7 @@
     "@kevinmarrec/nuxt-pwa": "0.17.0",
     "@nuxt/image-edge": "1.0.0-28050764.aaee7ac",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
-    "@types/node": "16.18.26",
+    "@types/node": "16.18.30",
     "eslint": "8.40.0",
     "eslint-config-prettier": "8.8.0",
     "nuxt": "3.4.3",
