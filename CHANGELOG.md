@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.2.0
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v1.1.1...v1.2.0)
+
+### 🚀 Enhancements
+
+- Make links more explicit ([6ef5807](https://github.com/tmlmt/homepage/commit/6ef5807))
+- Add page transition ([b6b3a07](https://github.com/tmlmt/homepage/commit/b6b3a07))
+
+### 🩹 Fixes
+
+- Decrease margins on mobile ([a971c42](https://github.com/tmlmt/homepage/commit/a971c42))
+- **index:** Improve text ([8893da0](https://github.com/tmlmt/homepage/commit/8893da0))
+
+### ❤️  Contributors
+
+- Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
+
 ## v1.1.1
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v1.1.0...v1.1.1)
