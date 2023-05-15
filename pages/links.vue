@@ -7,7 +7,7 @@ defineOgImageStatic({ description: "Thomas Lamant's personal projects and profes
 </script>
 
 <template>
-  <div class="flex w-full justify-content-center">
+  <div class="flex h-full w-full justify-content-center">
     <div class="grid grid-nogutter">
       <CardItem
         id="blog"
