@@ -68,10 +68,10 @@ defineOgImageStatic({ description: "Thomas Lamant's homepage" })
     line-height: 1.3;
 
     & a, a:visited {
-      color: #458bfd;
+      color: #024FCA;
 
       &:hover {
-        color: #458bfd;
+        color: #024FCA;
         text-decoration: underline;
       }
     }
