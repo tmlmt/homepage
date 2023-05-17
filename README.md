@@ -2,6 +2,10 @@
 
 Source code of [my homepage](https://www.tmlmt.com), made with [Nuxt](https://nuxt.com).
 
+## Google Lighthouse score
+
+![image](https://github.com/tmlmt/homepage/assets/10244927/0778c1fa-960a-4afb-b670-ee42e55cb367)
+
 ## Fork
 
 If you want to work and reuse the code: 
