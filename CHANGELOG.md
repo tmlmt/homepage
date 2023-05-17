@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.4.0
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v1.3.1...v1.4.0)
+
+### 🚀 Enhancements
+
+- Add Umami analytics ([d35cfe4](https://github.com/tmlmt/homepage/commit/d35cfe4))
+
+### 🩹 Fixes
+
+- Color contrast ([#6](https://github.com/tmlmt/homepage/pull/6))
+- **HeaderBar:** Link accessibility ([#7](https://github.com/tmlmt/homepage/pull/7))
+
+### ❤️  Contributors
+
+- Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
+
 ## v1.3.1
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v1.3.0...v1.3.1)
