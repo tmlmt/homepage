@@ -3,7 +3,7 @@
   "author": "Thomas Lamant <tom@tmlmt.com> (https://github.com/tmlmt)",
   "description": "Thomas Lamant's homepage",
   "repository": "github:tmlmt/homepage",
-  "packageManager": "pnpm@8.4.0",
+  "packageManager": "pnpm@8.5.1",
   "private": false,
   "scripts": {
     "build": "nuxt build",
