@@ -2,7 +2,7 @@ lockfileVersion: '6.0'
 
 dependencies:
   nuxt-umami:
-    specifier: ^2.4.2
+    specifier: 2.4.2
     version: 2.4.2(vue@3.2.47)
   primeflex:
     specifier: 3.3.0
