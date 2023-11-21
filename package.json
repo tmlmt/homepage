@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@kevinmarrec/nuxt-pwa": "0.17.0",
-    "@nuxt/image-edge": "1.0.0-28059208.2abef1b",
+    "@nuxt/image-edge": "1.0.0-testing",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@types/node": "16.18.32",
     "eslint": "8.41.0",
