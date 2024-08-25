@@ -1,7 +1,7 @@
 export default defineAppConfig({
   umami: {
     host: 'https://stats.lamanufactu.re',
-    id: 'b44384cc-b5b2-4422-b8bb-012b18e852ee',
+    id: '91e5f788-0a06-48d9-aaae-c7a06c2e13e2',
     ignoreLocalhost: true,
     version: 2
   }
