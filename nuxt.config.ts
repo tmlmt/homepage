@@ -55,12 +55,6 @@ export default defineNuxtConfig({
     blockNonSeoBots: true
   },
 
-  runtimeConfig: {
-    public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL
-    }
-  },
-
   site: {
     url: 'https://www.tmlmt.com',
     indexable: true
