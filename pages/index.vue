@@ -1,9 +1,13 @@
 <script setup lang="ts">
 definePageMeta({
   title: 'Thomas Lamant',
-  description: "Thomas Lamant's homepage"
+  description: 'Personal homepage'
 })
-defineOgImageStatic({ description: "Thomas Lamant's homepage" })
+
+defineOgImageComponent('NuxtSeo', {
+  theme: '#024FCA',
+  description: 'Personal homepage'
+})
 </script>
 
 <template>

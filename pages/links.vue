@@ -3,7 +3,11 @@ definePageMeta({
   title: 'Thomas Lamant | Links',
   description: "Thomas Lamant's personal projects and professional activities"
 })
-defineOgImageStatic({ description: "Thomas Lamant's personal projects and professional activities" })
+
+defineOgImageComponent('NuxtSeo', {
+  title: 'Links',
+  theme: '#024FCA'
+})
 </script>
 
 <template>

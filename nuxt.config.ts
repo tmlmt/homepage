@@ -18,6 +18,10 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/image-edge', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-og-image', '@kevinmarrec/nuxt-pwa'],
 
+  ogImage: {
+
+  },
+
   postcss: {
     plugins: {
       'postcss-nesting': {}
@@ -56,7 +60,9 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://www.tmlmt.com',
+    url: process.env.NUXT_PUBLIC_SITE_URL,
+    env: process.env.NUXT_APP_ENV,
+    name: 'tmlmt',
     indexable: true
   },
 
