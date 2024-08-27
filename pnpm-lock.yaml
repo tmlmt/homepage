@@ -49,8 +49,8 @@ importers:
         specifier: 2.3.0
         version: 2.3.0(magicast@0.3.5)(rollup@4.21.1)
       nuxt-simple-sitemap:
-        specifier: 2.5.0
-        version: 2.5.0(magicast@0.3.5)(rollup@4.21.1)
+        specifier: 2.7.0
+        version: 2.7.0(magicast@0.3.5)(rollup@4.21.1)
       postcss-nesting:
         specifier: 11.2.2
         version: 11.2.2(postcss@8.4.41)
@@ -722,6 +722,7 @@ packages:
 
   '@kevinmarrec/nuxt-pwa@0.17.0':
     resolution: {integrity: sha512-TI/0Fe30g6/VL2Y2jDLF/q5sov8UBE5K4/+CRPUnJbQPCXhCzTBM8EjllDUwslZ3bPtCk2TqwDFZOHaKtY/eoA==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@kwsites/file-exists@1.1.1':
     resolution: {integrity: sha512-m9/5YGR18lIwxSFDwfE3oA7bWuq9kdau6ugN4H2rJeyhFQZcG9AgSHkQtSD15a8WvTgfz9aikZMrKPHvbpqFiw==}
@@ -787,16 +788,16 @@ packages:
     resolution: {integrity: sha512-gbhSbDvYfkGQ0R2ztqTLQLHRMv+7g50kAKKuN6mbF4tL9jg7NPnQ8bAarn2I4Qx8xtmwO+qY1ABkmYMn5S1CpA==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
-  '@nuxt/kit@3.4.3':
-    resolution: {integrity: sha512-aQyzplYFCL292UsVZzlOZOC51ZKYFL0PBihbcPzxTzXQvAfMF8/DQ539kqzqXzxTCcmnUB9ROhIaNUrAeUkFYA==}
+  '@nuxt/kit@3.5.3':
+    resolution: {integrity: sha512-QzoOGqa1zjKQfg7Y50TrrFAL9DhtIpYYs10gihcM1ISPrn9ROht+VEjqsaMvT+L8JuQbNf8wDYl8qzsdWGU29Q==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
   '@nuxt/schema@3.13.0':
     resolution: {integrity: sha512-JBGSjF9Hd8guvTV2312eM1RulCMJc50yR3CeMZPLDsI02A8TXQnABS8EbgvGRvxD43q/ITjj21B2ffG1wEVrnQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
-  '@nuxt/schema@3.4.3':
-    resolution: {integrity: sha512-8bv0/mRDw6THQguSz+cKG5FzDZc2XBkjcc5VZ7yET84r4aWzW9/R274cjlEagFKrw9BDaPEQhnkwpg+kZnpOUA==}
+  '@nuxt/schema@3.5.3':
+    resolution: {integrity: sha512-Tnon4mYfJZmsCtx4NZ9A+qjwo4DcZ6tERpEhYBY81PX7AiJ+hFPBFR1qR32Tff66/qJjZg5UXj6H9AdzwEYr2w==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
   '@nuxt/telemetry@2.5.4':
@@ -2943,9 +2944,6 @@ packages:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
 
-  lodash._reinterpolate@3.0.0:
-    resolution: {integrity: sha512-xYHt68QRoYGjeeM/XOE1uJtvXQAgvszfBhjV4yvsQH0u2i9I6cI6c6/eG4Hh3UAOVn0y/xAXwmTzEay49Q//HA==}
-
   lodash.defaults@4.2.0:
     resolution: {integrity: sha512-qjxPLHd3r5DnsdGacqOMU6pb/avJzdh9tFX2ymgoZE27BmjXrNy/y4LoaiTeAb+O3gL8AfpJGtqfX/ae2leYYQ==}
 
@@ -2957,12 +2955,6 @@ packages:
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
-
-  lodash.template@4.5.0:
-    resolution: {integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==}
-
-  lodash.templatesettings@4.2.0:
-    resolution: {integrity: sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==}
 
   lodash.uniq@4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
@@ -3212,8 +3204,9 @@ packages:
   nuxt-simple-robots@2.3.0:
     resolution: {integrity: sha512-ZiDPycr/MAhaQ5KxAojCBJA37vzz1jg8yxNRmn1I38sHnYi8DWHIJyJKXYI+jatqgKyFrMhyQnvVTK+SOS0w2A==}
 
-  nuxt-simple-sitemap@2.5.0:
-    resolution: {integrity: sha512-W1w2UvGjFtNniFB+yFMH1DLnREdzkVC5qSF9EhQ9Xvi5acdPNnbHMBArarPF7i7z0uMtjm5kPjvV9S1o7InmJg==}
+  nuxt-simple-sitemap@2.7.0:
+    resolution: {integrity: sha512-qQ6TZU9rXVA7YjM1cHaELn13oP6w9y3KKs6a0t4ZVkQVnRbmtD8YJqk5TeuXamzPwwCPSoY2v6R16s+qKaha2g==}
+    deprecated: Package has been migrated to @nuxtjs/sitemap.
 
   nuxt-umami@2.4.2:
     resolution: {integrity: sha512-nwBQTIwX6MnKbJODIkCd/3eRGj5FMGhJbLrj9gbtc7irIYi13KnFOobF2cptl3TA5O3IebqcgsjIl8SLy63oXQ==}
@@ -5260,9 +5253,9 @@ snapshots:
       - rollup
       - supports-color
 
-  '@nuxt/kit@3.4.3(magicast@0.3.5)(rollup@4.21.1)':
+  '@nuxt/kit@3.5.3(magicast@0.3.5)(rollup@4.21.1)':
     dependencies:
-      '@nuxt/schema': 3.4.3(rollup@4.21.1)
+      '@nuxt/schema': 3.5.3(rollup@4.21.1)
       c12: 1.11.1(magicast@0.3.5)
       consola: 3.2.3
       defu: 6.1.4
@@ -5271,7 +5264,6 @@ snapshots:
       ignore: 5.3.2
       jiti: 1.21.6
       knitwork: 1.1.0
-      lodash.template: 4.5.0
       mlly: 1.7.1
       pathe: 1.1.2
       pkg-types: 1.2.0
@@ -5303,7 +5295,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@nuxt/schema@3.4.3(rollup@4.21.1)':
+  '@nuxt/schema@3.5.3(rollup@4.21.1)':
     dependencies:
       defu: 6.1.4
       hookable: 5.5.3
@@ -7809,8 +7801,6 @@ snapshots:
     dependencies:
       p-locate: 5.0.0
 
-  lodash._reinterpolate@3.0.0: {}
-
   lodash.defaults@4.2.0: {}
 
   lodash.isarguments@3.1.0: {}
@@ -7818,15 +7808,6 @@ snapshots:
   lodash.memoize@4.1.2: {}
 
   lodash.merge@4.6.2: {}
-
-  lodash.template@4.5.0:
-    dependencies:
-      lodash._reinterpolate: 3.0.0
-      lodash.templatesettings: 4.2.0
-
-  lodash.templatesettings@4.2.0:
-    dependencies:
-      lodash._reinterpolate: 3.0.0
 
   lodash.uniq@4.5.0: {}
 
@@ -8160,9 +8141,9 @@ snapshots:
       - rollup
       - supports-color
 
-  nuxt-simple-sitemap@2.5.0(magicast@0.3.5)(rollup@4.21.1):
+  nuxt-simple-sitemap@2.7.0(magicast@0.3.5)(rollup@4.21.1):
     dependencies:
-      '@nuxt/kit': 3.4.3(magicast@0.3.5)(rollup@4.21.1)
+      '@nuxt/kit': 3.5.3(magicast@0.3.5)(rollup@4.21.1)
       chalk: 5.3.0
       defu: 6.1.4
       escape-string-regexp: 5.0.0
