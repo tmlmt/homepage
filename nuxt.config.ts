@@ -60,5 +60,13 @@ export default defineNuxtConfig({
     indexable: true
   },
 
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        baseUrl: './'
+      }
+    }
+  },
+
   compatibilityDate: '2024-08-27'
 })
