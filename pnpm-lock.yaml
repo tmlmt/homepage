@@ -15,8 +15,8 @@ importers:
         specifier: 3.3.0
         version: 3.3.0
       primeicons:
-        specifier: 6.0.1
-        version: 6.0.1
+        specifier: 7.0.0
+        version: 7.0.0
       primevue:
         specifier: 3.29.1
         version: 3.29.1(vue@3.4.38(typescript@5.5.4))
@@ -3598,8 +3598,8 @@ packages:
   primeflex@3.3.0:
     resolution: {integrity: sha512-4hvyIO7lERN5bnyURn67Qpozghins8Jq/GSXO6tymc3oa2ADHWuiYBti8ZptPwHu+uD/HTEisS26NEmeIGfPZQ==}
 
-  primeicons@6.0.1:
-    resolution: {integrity: sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==}
+  primeicons@7.0.0:
+    resolution: {integrity: sha512-jK3Et9UzwzTsd6tzl2RmwrVY/b8raJ3QZLzoDACj+oTJ0oX7L9Hy+XnVwgo4QVKlKpnP/Ur13SXV/pVh4LzaDw==}
 
   primevue@3.29.1:
     resolution: {integrity: sha512-dn00eWy5ZVL5srjVD/sLppjg4leDPKx3EUxOMuTi/o5e0XHGB1ZASfXPSSNTr314k3NWpoQqzuDfPNOg4PJ7fg==}
@@ -8640,7 +8640,7 @@ snapshots:
 
   primeflex@3.3.0: {}
 
-  primeicons@6.0.1: {}
+  primeicons@7.0.0: {}
 
   primevue@3.29.1(vue@3.4.38(typescript@5.5.4)):
     dependencies:
