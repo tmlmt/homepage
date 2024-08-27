@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     '~/assets/main.css'
   ],
 
-  modules: ['@nuxt/image-edge', '@nuxtjs/robots',  '@nuxtjs/sitemap', 'nuxt-og-image', '@kevinmarrec/nuxt-pwa'],
+  modules: ['@nuxt/image-edge', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-og-image', '@kevinmarrec/nuxt-pwa'],
 
   postcss: {
     plugins: {
