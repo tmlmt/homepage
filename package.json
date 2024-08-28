@@ -23,7 +23,7 @@
     "eslint": "9.9.1",
     "nuxt": "3.13.0",
     "nuxt-og-image": "3.0.0-rc.65",
-    "postcss-nesting": "11.2.2",
+    "postcss-nesting": "13.0.0",
     "typescript": "5.5.4",
     "vue-tsc": "2.0.29"
   },
