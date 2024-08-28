@@ -34,7 +34,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ['@nuxt/image-edge', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-og-image'],
+  modules: ['@nuxt/image-edge', '@nuxt/eslint', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-og-image'],
 
   postcss: {
     plugins: {

@@ -11,17 +11,16 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --ext .ts,.js,.vue ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@kevinmarrec/nuxt-pwa": "0.17.0",
+    "@nuxt/eslint": "0.5.3",
     "@nuxt/image-edge": "1.0.0-28059208.2abef1b",
-    "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@nuxtjs/robots": "4.1.3",
     "@nuxtjs/sitemap": "6.0.0-beta.4",
     "@types/node": "20.16.1",
-    "eslint": "8.57.0",
-    "eslint-config-prettier": "8.10.0",
+    "eslint": "9.9.1",
     "nuxt": "3.13.0",
     "nuxt-og-image": "3.0.0-rc.65",
     "postcss-nesting": "11.2.2",
