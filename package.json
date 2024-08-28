@@ -31,7 +31,7 @@
     "nuxt-umami": "2.6.4",
     "primeflex": "3.3.0",
     "primeicons": "7.0.0",
-    "primevue": "3.29.1"
+    "primevue": "4.0.5"
   },
   "version": "1.4.0"
 }
