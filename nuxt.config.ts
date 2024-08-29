@@ -20,15 +20,10 @@ export default defineNuxtConfig({
     }
   },
 
-  build: {
-    transpile: ['primevue']
-  },
-
   css: [
-    'primevue/resources/themes/lara-light-blue/theme.css',
-    'primevue/resources/primevue.css',
     'primeicons/primeicons.css',
     'primeflex/primeflex.css',
+    'primeflex/themes/primeone-light.css',
     '~/assets/main.css'
   ],
 

@@ -52,7 +52,7 @@ const onEnter = () => {
         <nuxt-img :src="`/links/${props.id}.png`" sizes="sm:100vw md:360px lg:400px" :alt="props.alt" />
       </div>
       <div
-        class="card-overlay text-white surface-900 px-4 py-2 h-full w-full absolute top-0 left-0 transition-ease-in-out transition-duration-500"
+        class="card-overlay text-white surface-900 px-4 py-2 absolute top-0 left-0 transition-ease-in-out transition-duration-500"
         :class="{'card-opaque' : isOpaque && isClick, 'card-transparent': !isOpaque && isClick}"
       >
         <div class="flex h-full flex-column justify-content-between">
@@ -97,6 +97,8 @@ const onEnter = () => {
 
     & .card-overlay {
       opacity: 0;
+      width: calc(100% - 3rem);
+      height: calc(100% - 1rem);
 
       & a {
         color: #ffffff;
