@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
   title: 'Thomas Lamant | Business Card',
-  description: 'Offshore Wind Engineer at Ørsted',
+  description: 'Lead Category Manager at Ørsted',
   layout: 'cards'
 })
 </script>
@@ -29,12 +29,12 @@ definePageMeta({
     <div class="grid h-full mx-2 mb-5">
       <div class="col-12 flex flex-column align-items-center mb-3">
         <h1 class="my-0 text-gradient-blue">Thomas Lamant</h1>
-        <p>Project Manager <b>@</b> <span class="orsted-blue">Orsted</span></p>
+        <p>Lead Category Manager <b>@</b> <span class="orsted-blue">Orsted</span></p>
       </div>
       <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-briefcase" /></div>
-      <div class="col-10"><p>Head of Product Development<br>Product Line Foundations</p></div>
+      <div class="col-10"><p>Lead Category Manager<br>Foundations Primary Structures</p></div>
       <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-users" /></div>
-      <div class="col-10"><p>Innovation Project Management<br>Strategy, Innovation, Portfolio & Partnership</p></div>
+      <div class="col-10"><p>Offshore Category Strategy<br>Procurement</p></div>
       <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-map-marker" /></div>
       <div class="col-10"><p>Nesa Allé 1<br>2820 Gentofte<br>Denmark</p></div>
       <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-envelope" /></div>
