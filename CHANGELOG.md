@@ -1,5 +1,45 @@
 # Changelog
 
+## v2.0.0
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v1.4.0...v2.0.0)
+
+### 🚀 Enhancements
+
+- **HeaderBar:** Point contact link to contact page on blog ([525927e](https://github.com/tmlmt/homepage/commit/525927e))
+- Replace unused pwa features by manually generated icons ([ed3c5e1](https://github.com/tmlmt/homepage/commit/ed3c5e1))
+- Track click to profiles and contact page ([c0acb9c](https://github.com/tmlmt/homepage/commit/c0acb9c))
+- **orsted:** Update to latest job position ([b5fe512](https://github.com/tmlmt/homepage/commit/b5fe512))
+
+### 🩹 Fixes
+
+- **cards:** Cropping of top ([24a0fc1](https://github.com/tmlmt/homepage/commit/24a0fc1))
+
+### 📦 Build
+
+- Bump pnpm to v9.9.0 and setup proto ([ed75841](https://github.com/tmlmt/homepage/commit/ed75841))
+
+### 🏡 Chore
+
+- **readme:** Add Lighthouse score ([c96f717](https://github.com/tmlmt/homepage/commit/c96f717))
+- **config:** Update umami site id after reinstall by @bricedup ([26ef811](https://github.com/tmlmt/homepage/commit/26ef811))
+- **config:** Add newline ([ac3fd22](https://github.com/tmlmt/homepage/commit/ac3fd22))
+- **dev:** Enable devtools ([a75c7bf](https://github.com/tmlmt/homepage/commit/a75c7bf))
+- **dev:** Fix typescript integration ([b9cf864](https://github.com/tmlmt/homepage/commit/b9cf864))
+
+### 🎨 Styles
+
+- Improve og images while bumping nuxt-og-image to v3.0.0.rc-63 ([c4adf8c](https://github.com/tmlmt/homepage/commit/c4adf8c))
+
+### 🤖 CI
+
+- Bump eslint to v9 and use Nuxt ESLint module ([9b66ada](https://github.com/tmlmt/homepage/commit/9b66ada))
+- **CI-CD:** Update actions to v4 which default to using node v20 ([9084ef0](https://github.com/tmlmt/homepage/commit/9084ef0))
+
+### ❤️ Contributors
+
+- Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
+
 ## v1.4.0
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v1.3.1...v1.4.0)
