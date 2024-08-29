@@ -7,14 +7,24 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="flex flex-column justify-content-center h-full card">
+  <div class="flex flex-column justify-content-center card">
     <div class="card-header">
       <nuxt-img
         src="/cards/offshorewind_bg_768px.jpg"
+        height="299"
+        width="768"
         sizes="sm:100vw md:768px"
+        class="background-pic"
         title="Credit: Nicholas Doherty via Unsplash"
       />
-      <nuxt-img src="/cards/orsted_profile-pic.png" sizes="sm:30vw md:150px" class="profile-pic" alt="Thomas Lamant" />
+      <nuxt-img 
+        src="/cards/orsted_profile-pic.png" 
+        height="1046"
+        width="1046"
+        sizes="sm:30vw md:150px" 
+        class="profile-pic" 
+        alt="Thomas Lamant" 
+      />
     </div>
     <div class="grid h-full mx-2 mb-5">
       <div class="col-12 flex flex-column align-items-center mb-3">
@@ -39,7 +49,7 @@ definePageMeta({
   </div>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 body {
   color: #333333;
 }
@@ -80,14 +90,22 @@ p {
     }
   }
 
+  & .background-pic {
+    width: 100%;
+    height: auto;
+  }
+
   & .profile-pic {
     position: relative;
     left: calc(50% - 15vw);
     bottom: calc(15vw);
+    width: 30vw;
+    height: auto;
 
     @media (min-width: 769px) {
       left: calc(50% - 75px);
       bottom: calc(75px);
+      width: 150px;
     }
   }
 
