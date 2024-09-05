@@ -1,5 +1,21 @@
 # Changelog
 
+## v2.0.1
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v2.0.0...v2.0.1)
+
+### 🩹 Fixes
+
+- **index:** Typos and grammar mistake ([c94e51a](https://github.com/tmlmt/homepage/commit/c94e51a))
+
+### 🏡 Chore
+
+- **deps:** Bump all dependencies to latest versions
+
+### ❤️ Contributors
+
+- Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
+
 ## v2.0.0
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v1.4.0...v2.0.0)
@@ -26,6 +42,7 @@
 - **config:** Add newline ([ac3fd22](https://github.com/tmlmt/homepage/commit/ac3fd22))
 - **dev:** Enable devtools ([a75c7bf](https://github.com/tmlmt/homepage/commit/a75c7bf))
 - **dev:** Fix typescript integration ([b9cf864](https://github.com/tmlmt/homepage/commit/b9cf864))
+- **deps:** Bump all dependencies to latest versions
 
 ### 🎨 Styles
 
