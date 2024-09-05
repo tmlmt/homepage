@@ -23,9 +23,9 @@ defineOgImageComponent('NuxtSeo', {
       <a href="https://blog.tmlmt.com" class="emphasis" target="_blank">blog</a>.
     </p>
     <p>
-      Manual creatity has taken many forms for me over the years (woodworking, yoga, etc.).
+      Manual creativity has taken many forms for me over the years (woodworking, yoga, etc.).
       I've particularly discoved a passion for leatherwork, that I hope one day to
-      to bring to a broader public through my own brand,
+      bring to a broader public through my own brand,
       <a href="https://www.maraa.dk" class="emphasis" target="_blank">Marå</a>.
     </p>
     <p>
@@ -35,7 +35,7 @@ defineOgImageComponent('NuxtSeo', {
       <span class="emphasis">Python/Pandas</span> for small tasks or data analysis, it is
       web development that I'm exploring, especially the
       <span class="emphasis">Nuxt</span> framework
-      (Vue, Vite, Node.JS, Typescript). It powered this homepage, but also my latest
+      (Vue, Vite, Node.JS, Typescript). It powers this homepage, as well as my latest
       project, <a href="https://www.bodegamap.com" class="emphasis" target="_blank">Bodega Map</a>.
     </p>
     <p>
