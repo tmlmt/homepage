@@ -25,7 +25,7 @@
     "nuxt-og-image": "3.0.0-rc.65",
     "postcss-nesting": "13.0.0",
     "typescript": "5.5.4",
-    "vue-tsc": "2.0.29"
+    "vue-tsc": "2.1.6"
   },
   "dependencies": {
     "nuxt-umami": "2.6.4",
