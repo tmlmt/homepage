@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       nuxt-umami:
-        specifier: 2.6.4
-        version: 2.6.4
+        specifier: 2.6.7
+        version: 2.6.7
       primeflex:
         specifier: 3.3.1
         version: 3.3.1
@@ -3120,8 +3120,8 @@ packages:
   nuxt-site-config@2.2.16:
     resolution: {integrity: sha512-hMRIMPxdYcXXO8MQsSJrwwseYJfoKMUZxCVYFl+j2o98erbzULYdptupcQRSEPZ6Sor/5nIj1RsYq1rppeyODg==}
 
-  nuxt-umami@2.6.4:
-    resolution: {integrity: sha512-R+Fv+chpa3CcLLkAERzeCFmvZcFv3irUhtAH9x4Ukm12hjHGKeUSArZK07Ld/bzkq+2WJp6QqmXdr/KK/f6g1w==}
+  nuxt-umami@2.6.7:
+    resolution: {integrity: sha512-qa/YZf26l3sQ5VGXOyha8SAP00BULw4VrZxeDfklUsroHPaeVkTU46AiSTEpz6I1UF/u9NDJR+u8SQy0l5yUsA==}
 
   nuxt@3.13.0:
     resolution: {integrity: sha512-NZlPGlMav18KXWiOmTguQtH5lcrwooPniWXM3Ca4c9spsMRu3wyWLlN8wiI/cK+lEu3rQyKCGSA75nFVK4Ew3w==}
@@ -8102,7 +8102,7 @@ snapshots:
       - vite
       - vue
 
-  nuxt-umami@2.6.4: {}
+  nuxt-umami@2.6.7: {}
 
   nuxt@3.13.0(@parcel/watcher@2.4.1)(@types/node@20.16.1)(eslint@9.9.1(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.1)(sass-embedded@1.77.8)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@20.16.1)(sass-embedded@1.77.8)(terser@5.31.6))(vue-tsc@2.1.6(typescript@5.5.4)):
     dependencies:
