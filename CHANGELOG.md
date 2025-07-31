@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.0.3
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v2.0.2...v2.0.3)
+
+### 🏡 Chore
+
+- Update lock file ([d6a406c](https://github.com/tmlmt/homepage/commit/d6a406c))
+
+### ❤️ Contributors
+
+- Thomas Lamant ([@tmlmt](https://github.com/tmlmt))
+
 ## v2.0.2
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v2.0.1...v2.0.2)
