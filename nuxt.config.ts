@@ -1,7 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: ['nuxt-umami'],
-
   app: {
     head: {
       link: [
@@ -29,7 +27,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ['@nuxt/image', '@nuxt/eslint', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-og-image'],
+  modules: ['nuxt-umami', '@nuxt/image', '@nuxt/eslint', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-og-image'],
 
   postcss: {
     plugins: {
@@ -55,6 +53,13 @@ export default defineNuxtConfig({
         baseUrl: './'
       }
     }
+  },
+
+  umami: {
+    host: 'https://stats.lamanufactu.re',
+    id: '91e5f788-0a06-48d9-aaae-c7a06c2e13e2',
+    ignoreLocalhost: true,
+    useDirective: true
   },
 
   compatibilityDate: '2024-08-27'
