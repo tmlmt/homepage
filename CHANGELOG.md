@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.0.2
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v2.0.1...v2.0.2)
+
+### 🏡 Chore
+
+- Bump nuxt to v4 and all other dependencies to latest on Aug 1, 2025 ([c662a42](https://github.com/tmlmt/homepage/commit/c662a42))
+
+### ❤️ Contributors
+
+- Thomas Lamant ([@tmlmt](https://github.com/tmlmt))
+
 ## v2.0.1
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v2.0.0...v2.0.1)
