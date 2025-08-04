@@ -6,7 +6,7 @@ name: CI-CD
 on:
   release:
     types: [published]
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
   build:
@@ -18,29 +18,31 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-    - uses: pnpm/action-setup@v2
-      with:
-        run_install: true
-    - name: create env file
-      run: |
-        touch .env
-        echo NODE_ENV="production" >> .env
-        echo NUXT_PUBLIC_SITE_URL="https://www.tmlmt.com" >> .env
-        echo NUXT_APP_ENV="production" >> .env
-    - name: Build app
-      run: pnpm generate
-    - name: Deploy to Production server
-      uses: easingthemes/ssh-deploy@main
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        REMOTE_HOST: ${{ secrets.SSH_HOST }}
-        REMOTE_USER: ${{ secrets.SSH_USER }}
-        REMOTE_PORT: ${{ secrets.SSH_PORT }}
-        SOURCE: '.output/public/.'
-        TARGET: ${{ secrets.TARGET_DIR }}
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - uses: pnpm/action-setup@v2
+        with:
+          run_install: true
+      - name: create env file
+        run: |
+          touch .env
+          echo NODE_ENV="production" >> .env
+          echo NUXT_PUBLIC_SITE_URL="https://www.tmlmt.com" >> .env
+          echo NUXT_APP_ENV="production" >> .env
+      - name: Run e2e tests
+        run: pnpm test:e2e
+      - name: Build app
+        run: pnpm generate
+      - name: Deploy to Production server
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.SSH_HOST }}
+          REMOTE_USER: ${{ secrets.SSH_USER }}
+          REMOTE_PORT: ${{ secrets.SSH_PORT }}
+          SOURCE: ".output/public/."
+          TARGET: ${{ secrets.TARGET_DIR }}
