@@ -14,7 +14,8 @@
     "postinstall": "nuxt prepare",
     "test:e2e": "playwright test",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "release": "node scripts/release.mjs"
   },
   "devDependencies": {
     "@nuxt/eslint": "1.7.1",
@@ -25,6 +26,7 @@
     "@playwright/test": "1.54.2",
     "@types/node": "22.17.0",
     "eslint": "9.32.0",
+    "execa": "9.6.0",
     "linter-bundle": "7.7.0",
     "nuxt": "4.0.3",
     "nuxt-og-image": "5.1.9",
