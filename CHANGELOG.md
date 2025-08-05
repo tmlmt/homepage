@@ -1,5 +1,27 @@
 # Changelog
 
+## v3.0.1
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v3.0.0...v3.0.1)
+
+### 🩹 Fixes
+
+- **LinkItem:** Animation and top margin ([d2dbc94](https://github.com/tmlmt/homepage/commit/d2dbc94))
+
+### 🏡 Chore
+
+- **renovate:** Pin types/node to v22 ([afc70a0](https://github.com/tmlmt/homepage/commit/afc70a0))
+- **git:** Ignore playwright-report files ([77ec56d](https://github.com/tmlmt/homepage/commit/77ec56d))
+
+### ✅ Tests
+
+- **e2e:** Update snapshots after migration to TailwindCSS ([9904802](https://github.com/tmlmt/homepage/commit/9904802))
+- **e2e:** Update snapshots after style change in links margins ([744c674](https://github.com/tmlmt/homepage/commit/744c674))
+
+### ❤️ Contributors
+
+- Thomas Lamant ([@tmlmt](https://github.com/tmlmt))
+
 ## v3.0.0
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v2.0.1...v3.0.0)
