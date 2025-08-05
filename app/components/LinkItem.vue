@@ -1,13 +1,17 @@
 <script setup lang="ts">
-const props = withDefaults(defineProps<{
-  id: string,
-  alt: string,
-  title: string,
-  size: number,
-  link: string,
-  linkText?: string,
-  column?: 'left' | 'right',
-  row: 'top' | 'bottom' }>(), { column: 'right', linkText: '' })
+const props = withDefaults(
+  defineProps<{
+    id: string;
+    alt: string;
+    title: string;
+    size: number;
+    link: string;
+    linkText?: string;
+    column?: "left" | "right";
+    row: "top" | "bottom";
+  }>(),
+  { column: "right", linkText: "" },
+);
 
 // Managing card overlay opacity
 // - Laptops:
@@ -18,26 +22,26 @@ const props = withDefaults(defineProps<{
 //       (on Chrome: click = mouseenter + click; on Firefox: click = click)
 //     onLeave resets opacity (to 0) and forced mode (to disabled) so that we can hover again
 
-const isOpaque = ref(false)
-const isClick = ref()
-const isEnter = ref()
+const isOpaque = ref(false);
+const isClick = ref();
+const isEnter = ref();
 const onClick = () => {
-  isClick.value = true
+  isClick.value = true;
   if (isEnter.value) {
-    isOpaque.value = true
+    isOpaque.value = true;
   } else {
-    isOpaque.value = !isOpaque.value
+    isOpaque.value = !isOpaque.value;
   }
-  isEnter.value = false
-}
+  isEnter.value = false;
+};
 const onLeave = () => {
-  isClick.value = false
-  isOpaque.value = false
-}
+  isClick.value = false;
+  isOpaque.value = false;
+};
 const onEnter = () => {
-  isEnter.value = true
-  isOpaque.value = true
-}
+  isEnter.value = true;
+  isOpaque.value = true;
+};
 </script>
 
 <template>
@@ -45,15 +49,28 @@ const onEnter = () => {
     :class="[
       'col-12 md:col-6 flex p-0 card',
       props.column === 'left' ? 'md:justify-content-end' : '',
-      props.row === 'top' ? 'md:align-items-end' : 'md:align-items-start']"
+      props.row === 'top' ? 'md:align-items-end' : 'md:align-items-start',
+    ]"
   >
-    <div class="card-inner md:mx-2 md:mb-2" @click="onClick" @mouseenter="onEnter" @mouseleave="onLeave">
+    <div
+      class="card-inner md:mx-2 md:mb-2"
+      @click="onClick"
+      @mouseenter="onEnter"
+      @mouseleave="onLeave"
+    >
       <div>
-        <nuxt-img :src="`/links/${props.id}.png`" sizes="sm:100vw md:360px lg:400px" :alt="props.alt" />
+        <nuxt-img
+          :src="`/links/${props.id}.png`"
+          sizes="sm:100vw md:360px lg:400px"
+          :alt="props.alt"
+        />
       </div>
       <div
         class="card-overlay text-white surface-900 px-4 py-2 absolute top-0 left-0 transition-ease-in-out transition-duration-500"
-        :class="{'card-opaque' : isOpaque && isClick, 'card-transparent': !isOpaque && isClick}"
+        :class="{
+          'card-opaque': isOpaque && isClick,
+          'card-transparent': !isOpaque && isClick,
+        }"
       >
         <div class="flex h-full flex-column justify-content-between">
           <div>
@@ -62,7 +79,10 @@ const onEnter = () => {
           </div>
           <div>
             <p>
-              <a :href="props.link" class="explicit-link" target="_blank"><i class="pi pi-external-link mr-1" /> Go to {{ props.linkText ? props.linkText : props.link }}</a>
+              <a :href="props.link" class="explicit-link" target="_blank"
+                ><i class="pi pi-external-link mr-1" /> Go to
+                {{ props.linkText ? props.linkText : props.link }}</a
+              >
             </p>
           </div>
         </div>
@@ -72,7 +92,6 @@ const onEnter = () => {
 </template>
 
 <style lang="postcss">
-
 .card {
   @media (max-width: 768px) {
     justify-content: center;
@@ -115,7 +134,7 @@ const onEnter = () => {
         }
 
         &:hover {
-          color: #ffffff
+          color: #ffffff;
         }
       }
     }
@@ -123,10 +142,10 @@ const onEnter = () => {
 }
 
 .card-opaque {
-  opacity: 1 !important
+  opacity: 1 !important;
 }
 
 .card-transparent {
-  opacity: 0 !important
+  opacity: 0 !important;
 }
 </style>

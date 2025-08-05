@@ -8,7 +8,8 @@ Source code of [my homepage](https://www.tmlmt.com), made with [Nuxt](https://nu
 
 ## Fork
 
-If you want to work and reuse the code: 
+If you want to work and reuse the code:
+
 - Install pnpm (see [docs](https://pnpm.io/installation))
 - Clone the git repo
 - Install the dependencies: `pnpm install`

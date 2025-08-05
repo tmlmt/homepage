@@ -1,13 +1,13 @@
 <script setup lang="ts">
-const route = useRoute()
+const route = useRoute();
 
 useSeoMeta({
-  author: 'Thomas Lamant',
-  title: route.title as string || 'Thomas Lamant',
-  ogTitle: route.title as string || 'Thomas Lamant',
-  description: route.description as string || "Thomas Lamant's homepage",
-  ogDescription: route.description as string || "Thomas Lamant's homepage"
-})
+  author: "Thomas Lamant",
+  title: (route.title as string) || "Thomas Lamant",
+  ogTitle: (route.title as string) || "Thomas Lamant",
+  description: (route.description as string) || "Thomas Lamant's homepage",
+  ogDescription: (route.description as string) || "Thomas Lamant's homepage",
+});
 </script>
 
 <template>
@@ -24,7 +24,7 @@ useSeoMeta({
 
 <style lang="postcss">
 .content-container {
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     margin-top: 0 !important;
   }
 }
