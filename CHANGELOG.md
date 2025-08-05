@@ -1,5 +1,40 @@
 # Changelog
 
+## v3.0.0
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v2.0.1...v3.0.0)
+
+### 🩹 Fixes
+
+- Head data from route.meta instead of route ([3e9d7bc](https://github.com/tmlmt/homepage/commit/3e9d7bc))
+
+### 📦 Build
+
+- ⚠️ Bump nuxt to v4 and all other dependencies to latest on Aug 1, 2025 ([de3e6b0](https://github.com/tmlmt/homepage/commit/de3e6b0))
+
+### 🏡 Chore
+
+- **git:** Ignore playwright-report dir ([128348e](https://github.com/tmlmt/homepage/commit/128348e))
+- **lint:** Fix eslint config ([61a23bb](https://github.com/tmlmt/homepage/commit/61a23bb))
+
+### ✅ Tests
+
+- Add visual regression e2e test ([08b2f4f](https://github.com/tmlmt/homepage/commit/08b2f4f))
+
+### 🎨 Styles
+
+- Properly install prettier and format all ([20cb2b0](https://github.com/tmlmt/homepage/commit/20cb2b0))
+- ⚠️ Migrate from primeflex to TailwindCSS v4 ([c01a045](https://github.com/tmlmt/homepage/commit/c01a045))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️ Bump nuxt to v4 and all other dependencies to latest on Aug 1, 2025 ([de3e6b0](https://github.com/tmlmt/homepage/commit/de3e6b0))
+- ⚠️ Migrate from primeflex to TailwindCSS v4 ([c01a045](https://github.com/tmlmt/homepage/commit/c01a045))
+
+### ❤️ Contributors
+
+- Thomas Lamant ([@tmlmt](https://github.com/tmlmt))
+
 ## v2.0.1
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v2.0.0...v2.0.1)
