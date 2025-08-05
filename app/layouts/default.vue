@@ -3,10 +3,11 @@ const route = useRoute();
 
 useSeoMeta({
   author: "Thomas Lamant",
-  title: (route.title as string) || "Thomas Lamant",
-  ogTitle: (route.title as string) || "Thomas Lamant",
-  description: (route.description as string) || "Thomas Lamant's homepage",
-  ogDescription: (route.description as string) || "Thomas Lamant's homepage",
+  title: (route.meta.title as string) || "Thomas Lamant",
+  ogTitle: (route.meta.title as string) || "Thomas Lamant",
+  description: (route.meta.description as string) || "Thomas Lamant's homepage",
+  ogDescription:
+    (route.meta.description as string) || "Thomas Lamant's homepage",
 });
 </script>
 
