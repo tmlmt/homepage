@@ -11,9 +11,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div
-    class="flex flex-column h-full w-full md:justify-content-center align-items-center"
-  >
+  <div class="flex h-full w-full flex-col items-center md:justify-center">
     <main>
       <slot />
     </main>

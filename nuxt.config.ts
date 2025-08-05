@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2025-08-05",
@@ -34,12 +36,7 @@ export default defineNuxtConfig({
     },
   },
 
-  css: [
-    "primeicons/primeicons.css",
-    "primeflex/primeflex.css",
-    "primeflex/themes/primeone-light.css",
-    "~/assets/main.css",
-  ],
+  css: ["primeicons/primeicons.css", "~/assets/css/main.css"],
 
   devtools: { enabled: true },
 
@@ -83,5 +80,9 @@ export default defineNuxtConfig({
     id: "91e5f788-0a06-48d9-aaae-c7a06c2e13e2",
     ignoreLocalhost: true,
     useDirective: true,
+  },
+
+  vite: {
+    plugins: [tailwindcss()],
   },
 });
