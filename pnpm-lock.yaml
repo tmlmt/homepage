@@ -15,8 +15,8 @@ importers:
         specifier: 3.2.0
         version: 3.2.0(magicast@0.3.5)
       primeflex:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 4.0.0
+        version: 4.0.0
       primeicons:
         specifier: 7.0.0
         version: 7.0.0
@@ -5376,8 +5376,8 @@ packages:
     resolution: {integrity: sha512-4yf0QO/sllf/1zbZWYnvWw3NxCQwLXKzIj0G849LSufP15BXKM0rbD2Z3wVnkMfjdn/CB0Dpp444gYAACdsplg==}
     engines: {node: '>=18'}
 
-  primeflex@3.3.1:
-    resolution: {integrity: sha512-zaOq3YvcOYytbAmKv3zYc+0VNS9Wg5d37dfxZnveKBFPr7vEIwfV5ydrpiouTft8MVW6qNjfkaQphHSnvgQbpQ==}
+  primeflex@4.0.0:
+    resolution: {integrity: sha512-UOEZCRjR36+sm5bUpDhS1xbA068l9VC6y1aTNVqQPtXuKIdPTqAWHRUxj3mKAoPrQ9W373ooJJMgNVXfiaw04g==}
 
   primeicons@7.0.0:
     resolution: {integrity: sha512-jK3Et9UzwzTsd6tzl2RmwrVY/b8raJ3QZLzoDACj+oTJ0oX7L9Hy+XnVwgo4QVKlKpnP/Ur13SXV/pVh4LzaDw==}
@@ -12854,7 +12854,7 @@ snapshots:
     dependencies:
       parse-ms: 4.0.0
 
-  primeflex@3.3.1: {}
+  primeflex@4.0.0: {}
 
   primeicons@7.0.0: {}
 
