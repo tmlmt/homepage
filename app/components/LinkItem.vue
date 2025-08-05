@@ -47,13 +47,13 @@ const onEnter = () => {
 <template>
   <div
     :class="[
-      'card md:mt- col-span-2 flex justify-center p-0 not-last-of-type:border-b-1 not-last-of-type:border-b-gray-400 md:col-span-1 not-last-of-type:md:border-b-0',
+      'col-span-2 flex justify-center p-0 not-last-of-type:border-b-1 not-last-of-type:border-b-gray-400 md:col-span-1 md:mt-8 not-last-of-type:md:border-b-0',
       props.column === 'left' ? 'md:justify-end' : '',
       props.row === 'top' ? 'md:items-end' : 'md:items-start',
     ]"
   >
     <div
-      class="card-inner relative w-full md:mx-2 md:mb-2 md:w-[380px] md:border-1 md:border-gray-200 lg:w-[420px]"
+      class="relative w-full md:mx-2 md:mb-2 md:w-[380px] md:border-1 md:border-gray-200 lg:w-[420px]"
       @click="onClick"
       @mouseenter="onEnter"
       @mouseleave="onLeave"
@@ -67,7 +67,7 @@ const onEnter = () => {
         />
       </div>
       <div
-        class="card-overlay transition-ease-in-out transition-duration-500 absolute top-0 left-0 h-full bg-gray-900 px-6 py-3 text-white opacity-0 hover:opacity-100"
+        class="absolute top-0 left-0 h-full bg-gray-900 px-6 py-3 text-white opacity-0 duration-500 ease-in-out hover:opacity-100"
         :class="{
           'opacity-100!': isOpaque && isClick,
           'opacity-0!': !isOpaque && isClick,
