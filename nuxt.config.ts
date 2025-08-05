@@ -49,12 +49,6 @@ export default defineNuxtConfig({
     "nuxt-og-image",
   ],
 
-  postcss: {
-    plugins: {
-      "postcss-nesting": {},
-    },
-  },
-
   robots: {
     disallow: ["/cards"],
     blockNonSeoBots: true,
