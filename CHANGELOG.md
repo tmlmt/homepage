@@ -1,5 +1,36 @@
 # Changelog
 
+## v2.0.4
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v2.0.2...v2.0.4)
+
+### 🩹 Fixes
+
+- Head data from route.meta instead of route ([88ccbcd](https://github.com/tmlmt/homepage/commit/88ccbcd))
+
+### 🏡 Chore
+
+- Update lock file ([d6a406c](https://github.com/tmlmt/homepage/commit/d6a406c))
+- **release:** V2.0.3 ([725cde2](https://github.com/tmlmt/homepage/commit/725cde2))
+- **git:** Ignore playwright-report dir ([497337c](https://github.com/tmlmt/homepage/commit/497337c))
+
+### ✅ Tests
+
+- Add visual regression e2e test ([321a4c2](https://github.com/tmlmt/homepage/commit/321a4c2))
+
+### 🎨 Styles
+
+- Properly install prettier and format all ([f319790](https://github.com/tmlmt/homepage/commit/f319790))
+- Migrate from primeflex to TailwindCSS v4 ([4e86366](https://github.com/tmlmt/homepage/commit/4e86366))
+
+### 🤖 CI
+
+- Fix eslint config ([caca68d](https://github.com/tmlmt/homepage/commit/caca68d))
+
+### ❤️ Contributors
+
+- Thomas Lamant ([@tmlmt](https://github.com/tmlmt))
+
 ## v2.0.3
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v2.0.2...v2.0.3)

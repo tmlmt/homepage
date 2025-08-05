@@ -42,5 +42,5 @@
     "std-env": "^3.9.0",
     "tailwindcss": "^4.1.11"
   },
-  "version": "2.0.3"
+  "version": "2.0.4"
 }
