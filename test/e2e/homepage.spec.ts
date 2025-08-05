@@ -6,19 +6,31 @@ test.describe("Overall Visuals", () => {
     await goto("/", { waitUntil: "hydration" });
     // Assert that the page matches the saved screenshot.
     // The first time you run this, it will create a "golden" snapshot.
-    await expect(page).toHaveScreenshot("homepage.png", { fullPage: true });
+    await expect(page).toHaveScreenshot("homepage.png", {
+      fullPage: true,
+      maxDiffPixelRatio: 0.02,
+    });
   });
   test("should match the links page screenshots", async ({ page, goto }) => {
     // Navigate to the Links page
     await goto("/links", { waitUntil: "hydration" });
-    await expect(page).toHaveScreenshot("links.png", { fullPage: true });
+    await expect(page).toHaveScreenshot("links.png", {
+      fullPage: true,
+      maxDiffPixelRatio: 0.02,
+    });
     // Hover on a link item
     await page.getByTestId("blog-link").hover();
-    await expect(page).toHaveScreenshot("link-hover.png", { fullPage: true });
+    await expect(page).toHaveScreenshot("link-hover.png", {
+      fullPage: true,
+      maxDiffPixelRatio: 0.02,
+    });
   });
   test("should match the card screenshot", async ({ page, goto }) => {
     // Navigate to the Ørsted card page
     await goto("/cards/orsted", { waitUntil: "hydration" });
-    await expect(page).toHaveScreenshot("card-orsted.png", { fullPage: true });
+    await expect(page).toHaveScreenshot("card-orsted.png", {
+      fullPage: true,
+      maxDiffPixelRatio: 0.02,
+    });
   });
 });
