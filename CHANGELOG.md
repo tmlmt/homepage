@@ -70,7 +70,7 @@
 - Color contrast ([#6](https://github.com/tmlmt/homepage/pull/6))
 - **HeaderBar:** Link accessibility ([#7](https://github.com/tmlmt/homepage/pull/7))
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
 
@@ -84,7 +84,7 @@
 - Create ci-cd Github Action ([4e07ea1](https://github.com/tmlmt/homepage/commit/4e07ea1))
 - Update source dir ([6f222bb](https://github.com/tmlmt/homepage/commit/6f222bb))
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
 
@@ -99,9 +99,9 @@
 
 ### 🩹 Fixes
 
- - **orsted:** Better icons ([59e3dca](https://github.com/tmlmt/homepage/commit/59e3dca))
+- **orsted:** Better icons ([59e3dca](https://github.com/tmlmt/homepage/commit/59e3dca))
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
 
@@ -113,7 +113,7 @@
 
 - **index:** Title top margin ([4ff6a1c](https://github.com/tmlmt/homepage/commit/4ff6a1c))
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
 
@@ -139,7 +139,7 @@
 - Decrease margins on mobile ([a971c42](https://github.com/tmlmt/homepage/commit/a971c42))
 - **index:** Improve text ([8893da0](https://github.com/tmlmt/homepage/commit/8893da0))
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
 
@@ -152,7 +152,7 @@
 - Remove business cards from sitemap and robots.txt ([2c9878e](https://github.com/tmlmt/homepage/commit/2c9878e))
 - Changelog ([c606f50](https://github.com/tmlmt/homepage/commit/c606f50))
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
 
@@ -175,7 +175,7 @@
 
 - Rename CardItem to LinkItem and cards to links ([c53fcf8](https://github.com/tmlmt/homepage/commit/c53fcf8))
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
 
@@ -187,7 +187,7 @@
 
 - **index:** Main content width ([9bd834b](https://github.com/tmlmt/homepage/commit/9bd834b))
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
 
@@ -217,7 +217,6 @@
 
 - Update README and LICENSEs ([c38dbab](https://github.com/tmlmt/homepage/commit/c38dbab))
 
-### ❤️  Contributors
+### ❤️ Contributors
 
 - Thomas Lamant ([@tmlmt](http://github.com/tmlmt))
-

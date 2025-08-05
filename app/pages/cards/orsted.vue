@@ -1,9 +1,9 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'Thomas Lamant | Business Card',
-  description: 'Lead Category Manager at Ørsted',
-  layout: 'cards'
-})
+  title: "Thomas Lamant | Business Card",
+  description: "Lead Category Manager at Ørsted",
+  layout: "cards",
+});
 </script>
 
 <template>
@@ -17,34 +17,68 @@ definePageMeta({
         class="background-pic"
         title="Credit: Nicholas Doherty via Unsplash"
       />
-      <nuxt-img 
-        src="/cards/orsted_profile-pic.png" 
+      <nuxt-img
+        src="/cards/orsted_profile-pic.png"
         height="1046"
         width="1046"
-        sizes="sm:30vw md:150px" 
-        class="profile-pic" 
-        alt="Thomas Lamant" 
+        sizes="sm:30vw md:150px"
+        class="profile-pic"
+        alt="Thomas Lamant"
       />
     </div>
     <div class="grid h-full mx-2 mb-5">
       <div class="col-12 flex flex-column align-items-center mb-3">
         <h1 class="my-0 text-gradient-blue">Thomas Lamant</h1>
-        <p>Lead Category Manager <b>@</b> <span class="orsted-blue">Orsted</span></p>
+        <p>
+          Lead Category Manager <b>@</b> <span class="orsted-blue">Orsted</span>
+        </p>
       </div>
-      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-briefcase" /></div>
-      <div class="col-10"><p>Lead Category Manager<br>Foundations Primary Structures</p></div>
-      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-users" /></div>
-      <div class="col-10"><p>Offshore Category Strategy<br>Procurement</p></div>
-      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-map-marker" /></div>
-      <div class="col-10"><p>Nesa Allé 1<br>2820 Gentofte<br>Denmark</p></div>
-      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-envelope" /></div>
-      <div class="col-10"><p><a href="mailto:thlam@orsted.com">thlam@orsted.com</a></p></div>
-      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-phone" /></div>
-      <div class="col-10"><p><a href="tel:+4599559068">+45 99 55 90 68</a></p></div>
-      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-linkedin" /></div>
-      <div class="col-10"><p><a href="https://www.linkedin.com/in/thomas-lamant-9a28423b/">LinkedIn Profile</a></p></div>
-      <div class="col-2 flex align-items-center justify-content-center"><i class="pi pi-download" /></div>
-      <div class="col-10"><p><a href="/cards/ThomasLamant_Orsted.vcf">Download Vcard</a></p></div>
+      <div class="col-2 flex align-items-center justify-content-center">
+        <i class="pi pi-briefcase" />
+      </div>
+      <div class="col-10">
+        <p>Lead Category Manager<br />Foundations Primary Structures</p>
+      </div>
+      <div class="col-2 flex align-items-center justify-content-center">
+        <i class="pi pi-users" />
+      </div>
+      <div class="col-10">
+        <p>Offshore Category Strategy<br />Procurement</p>
+      </div>
+      <div class="col-2 flex align-items-center justify-content-center">
+        <i class="pi pi-map-marker" />
+      </div>
+      <div class="col-10">
+        <p>Nesa Allé 1<br />2820 Gentofte<br />Denmark</p>
+      </div>
+      <div class="col-2 flex align-items-center justify-content-center">
+        <i class="pi pi-envelope" />
+      </div>
+      <div class="col-10">
+        <p><a href="mailto:thlam@orsted.com">thlam@orsted.com</a></p>
+      </div>
+      <div class="col-2 flex align-items-center justify-content-center">
+        <i class="pi pi-phone" />
+      </div>
+      <div class="col-10">
+        <p><a href="tel:+4599559068">+45 99 55 90 68</a></p>
+      </div>
+      <div class="col-2 flex align-items-center justify-content-center">
+        <i class="pi pi-linkedin" />
+      </div>
+      <div class="col-10">
+        <p>
+          <a href="https://www.linkedin.com/in/thomas-lamant-9a28423b/"
+            >LinkedIn Profile</a
+          >
+        </p>
+      </div>
+      <div class="col-2 flex align-items-center justify-content-center">
+        <i class="pi pi-download" />
+      </div>
+      <div class="col-10">
+        <p><a href="/cards/ThomasLamant_Orsted.vcf">Download Vcard</a></p>
+      </div>
     </div>
   </div>
 </template>
@@ -59,11 +93,12 @@ body {
   font-weight: 600;
 }
 
-a, a:visited {
-  color: #024FCA;
+a,
+a:visited {
+  color: #024fca;
 
   &:hover {
-    color: #024FCA;
+    color: #024fca;
     text-decoration: underline;
   }
 }
@@ -108,6 +143,5 @@ p {
       width: 150px;
     }
   }
-
 }
 </style>

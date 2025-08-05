@@ -30,6 +30,6 @@ export default defineConfig<ConfigOptions>({
     },
   },
   projects: devicesToTest.map((p) =>
-    typeof p === "string" ? { name: p, use: devices[p] } : p
+    typeof p === "string" ? { name: p, use: devices[p] } : p,
   ),
 });
