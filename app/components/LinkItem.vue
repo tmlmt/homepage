@@ -47,40 +47,44 @@ const onEnter = () => {
 <template>
   <div
     :class="[
-      'col-12 md:col-6 flex p-0 card',
-      props.column === 'left' ? 'md:justify-content-end' : '',
-      props.row === 'top' ? 'md:align-items-end' : 'md:align-items-start',
+      'card md:mt- col-span-2 flex justify-center p-0 not-last-of-type:border-b-1 not-last-of-type:border-b-gray-400 md:col-span-1 not-last-of-type:md:border-b-0',
+      props.column === 'left' ? 'md:justify-end' : '',
+      props.row === 'top' ? 'md:items-end' : 'md:items-start',
     ]"
   >
     <div
-      class="card-inner md:mx-2 md:mb-2"
+      class="card-inner relative w-full md:mx-2 md:mb-2 md:w-[380px] md:border-1 md:border-gray-200 lg:w-[420px]"
       @click="onClick"
       @mouseenter="onEnter"
       @mouseleave="onLeave"
     >
       <div>
         <nuxt-img
+          class="h-auto w-full"
           :src="`/links/${props.id}.png`"
-          sizes="sm:100vw md:360px lg:400px"
+          sizes="sm:100vw md:380px lg:420px"
           :alt="props.alt"
         />
       </div>
       <div
-        class="card-overlay text-white surface-900 px-4 py-2 absolute top-0 left-0 transition-ease-in-out transition-duration-500"
+        class="card-overlay transition-ease-in-out transition-duration-500 absolute top-0 left-0 h-full bg-gray-900 px-6 py-3 text-white opacity-0 hover:opacity-100"
         :class="{
-          'card-opaque': isOpaque && isClick,
-          'card-transparent': !isOpaque && isClick,
+          'opacity-100!': isOpaque && isClick,
+          'opacity-0!': !isOpaque && isClick,
         }"
       >
-        <div class="flex h-full flex-column justify-content-between">
+        <div class="flex h-full flex-col justify-between text-base">
           <div>
-            <h2>{{ props.title }}</h2>
+            <h2 class="my-4 text-3xl font-bold">{{ props.title }}</h2>
             <slot />
           </div>
           <div>
             <p>
-              <a :href="props.link" class="explicit-link" target="_blank"
-                ><i class="pi pi-external-link mr-1" /> Go to
+              <a
+                :href="props.link"
+                class="font-normal text-white no-underline visited:text-white hover:text-white"
+                target="_blank"
+                ><i class="pi pi-external-link mr-1 text-xs" /> Go to
                 {{ props.linkText ? props.linkText : props.link }}</a
               >
             </p>
@@ -90,62 +94,3 @@ const onEnter = () => {
     </div>
   </div>
 </template>
-
-<style lang="postcss">
-.card {
-  @media (max-width: 768px) {
-    justify-content: center;
-  }
-
-  &:not(:last-of-type) {
-    @media (max-width: 768px) {
-      border-bottom: #666666 1px solid;
-    }
-  }
-
-  & .card-inner {
-    position: relative;
-
-    @media (min-width: 769px) {
-      border: #e0e0e0 1px solid;
-    }
-
-    &:hover .card-overlay {
-      opacity: 1;
-    }
-
-    & .card-overlay {
-      opacity: 0;
-      width: calc(100% - 3rem);
-      height: calc(100% - 1rem);
-
-      & a {
-        color: #ffffff;
-        text-decoration: underline;
-        font-weight: bold;
-
-        &.explicit-link {
-          text-decoration: none;
-          font-weight: normal;
-        }
-
-        & i {
-          font-size: 0.8rem;
-        }
-
-        &:hover {
-          color: #ffffff;
-        }
-      }
-    }
-  }
-}
-
-.card-opaque {
-  opacity: 1 !important;
-}
-
-.card-transparent {
-  opacity: 0 !important;
-}
-</style>

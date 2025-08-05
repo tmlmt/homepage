@@ -11,11 +11,11 @@ defineOgImageComponent("NuxtSeo", {
 </script>
 
 <template>
-  <div class="flex h-full w-full justify-content-center">
-    <div class="grid grid-nogutter">
+  <div class="flex h-full w-full justify-center">
+    <div class="grid-nogutter grid grid-cols-2">
       <LinkItem
-        data-testid="blog-link"
         id="blog"
+        data-testid="blog-link"
         alt="Blog"
         column="left"
         row="top"
@@ -24,9 +24,13 @@ defineOgImageComponent("NuxtSeo", {
         link="https://blog.tmlmt.com"
       >
         Self-hosted blog powered by
-        <a href="https://ghost.org/" target="_blank">Ghost</a>, where I
-        sometimes take the time to write and share thoughts on topics that come
-        to mind.
+        <a
+          href="https://ghost.org/"
+          class="font-bold text-white underline visited:text-white hover:text-white"
+          target="_blank"
+          >Ghost</a
+        >, where I sometimes take the time to write and share thoughts on topics
+        that come to mind.
       </LinkItem>
       <LinkItem
         id="bodegamap"
@@ -38,7 +42,12 @@ defineOgImageComponent("NuxtSeo", {
       >
         Discover Denmark's traditional pubs on an interactive map and find the
         ones closest to you! A self-hosted project powered by
-        <a href="https://nuxt.com" target="_blank">Nuxt</a>.
+        <a
+          href="https://nuxt.com"
+          class="font-bold text-white underline visited:text-white hover:text-white"
+          target="_blank"
+          >Nuxt</a
+        >.
       </LinkItem>
       <LinkItem
         id="maraa"
@@ -58,6 +67,7 @@ defineOgImageComponent("NuxtSeo", {
           Company sheet:
           <a
             href="https://datacvr.virk.dk/enhed/virksomhed/41983043"
+            class="font-bold text-white underline visited:text-white hover:text-white"
             target="_blank"
             >Virk.dk</a
           >
@@ -73,8 +83,13 @@ defineOgImageComponent("NuxtSeo", {
         link-text="my LinkedIn profile"
       >
         I currently work
-        <a href="https://orsted.com/" target="_blank">Ørsted</a> as a Project
-        Manager in Offshore Wind Power.
+        <a
+          href="https://orsted.com/"
+          class="font-bold text-white underline visited:text-white hover:text-white"
+          target="_blank"
+          >Ørsted</a
+        >
+        as a Project Manager in Offshore Wind Power.
       </LinkItem>
     </div>
   </div>

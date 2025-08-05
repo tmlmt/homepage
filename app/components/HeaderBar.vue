@@ -3,11 +3,11 @@ import logoSrc from "~/assets/logo.svg";
 </script>
 
 <template>
-  <div class="grid justify-content-between align-content-center m-3">
-    <div class="col-4 flex align-items-center">
+  <div class="m-3 flex content-center justify-between">
+    <div class="flex items-center">
       <NuxtLink to="/"><img :src="logoSrc" width="40" alt="Logo" /></NuxtLink>
     </div>
-    <div class="col-4 flex justify-content-end align-items-center">
+    <div class="flex items-center justify-end">
       <NuxtLink to="/links" class="mx-2">Links</NuxtLink>
       <a
         v-umami="'LinkedIn profile'"
