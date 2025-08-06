@@ -1,5 +1,25 @@
 # Changelog
 
+## v3.0.2
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v3.0.1...v3.0.2)
+
+### 🏡 Chore
+
+- **release:** Add script to automate commit, tag and release ([e7d8bc9](https://github.com/tmlmt/homepage/commit/e7d8bc9))
+
+### ✅ Tests
+
+- **e2e:** Allow 2% pixel diff to avoid test failing ([4d31632](https://github.com/tmlmt/homepage/commit/4d31632))
+
+### 🤖 CI
+
+- Install playwright browsers before executing tests ([fc9cb06](https://github.com/tmlmt/homepage/commit/fc9cb06))
+
+### ❤️ Contributors
+
+- Thomas Lamant ([@tmlmt](https://github.com/tmlmt))
+
 ## v3.0.1
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v3.0.0...v3.0.1)
