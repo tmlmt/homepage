@@ -78,18 +78,18 @@ defineOgImageComponent("NuxtSeo", {
         alt="LinkedIn"
         row="bottom"
         title="LinkedIn"
-        :size="823"
-        link="https://www.linkedin.com/in/thomas-lamant-9a28423b/"
+        :size="774"
+        link="https://www.linkedin.com/in/tmlmt/"
         link-text="my LinkedIn profile"
       >
-        I currently work
+        I currently work at
         <a
           href="https://orsted.com/"
           class="font-bold text-white underline visited:text-white hover:text-white"
           target="_blank"
           >Ørsted</a
         >
-        as a Project Manager in Offshore Wind Power.
+        as a Category Manager in Offshore Wind Power.
       </LinkItem>
     </div>
   </div>
