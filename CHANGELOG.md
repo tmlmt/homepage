@@ -1,5 +1,21 @@
 # Changelog
 
+## v3.1.0
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v3.0.2...v3.1.0)
+
+### 🚀 Enhancements
+
+- **links:** Update LinkedIn link to Category Manager position ([0b0a3ae](https://github.com/tmlmt/homepage/commit/0b0a3ae))
+
+### 🏡 Chore
+
+- **release:** Add gh checks and include changelogen in the script ([bff7852](https://github.com/tmlmt/homepage/commit/bff7852))
+
+### ❤️ Contributors
+
+- Thomas Lamant ([@tmlmt](https://github.com/tmlmt))
+
 ## v3.0.2
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v3.0.1...v3.0.2)
