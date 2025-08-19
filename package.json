@@ -18,7 +18,7 @@
     "release": "node scripts/release.mjs"
   },
   "devDependencies": {
-    "@nuxt/eslint": "1.7.1",
+    "@nuxt/eslint": "1.9.0",
     "@nuxt/image": "1.11.0",
     "@nuxt/test-utils": "3.19.2",
     "@nuxtjs/robots": "5.4.0",
