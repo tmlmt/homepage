@@ -99,7 +99,7 @@ async function buildTest() {
   log.info("Running tests and building documentation...");
   try {
     await run("pnpm", ["lint"]);
-    await run("pnpm", ["test"]);
+    await run("pnpm", ["test:e2e"]);
   } catch (error) {
     log.error("Tests or documentation build failed.");
     console.error(error);
