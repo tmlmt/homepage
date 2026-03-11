@@ -6,6 +6,20 @@ import { execa } from "execa";
 // --- Configuration ---
 const CHANGELOG_PATH = path.resolve(process.cwd(), "CHANGELOG.md");
 const DRY_RUN = process.argv.includes("--dry-run");
+const SKIP_BUILDTEST = process.argv.includes("--skip-buildtest");
+
+// Parse release version from --release or -r argument
+function getReleaseVersion() {
+  const args = process.argv;
+  const releaseIndex = args.findIndex(
+    (arg) => arg === "--release" || arg === "-r",
+  );
+  if (releaseIndex !== -1 && args[releaseIndex + 1]) {
+    return args[releaseIndex + 1];
+  }
+  return null;
+}
+const RELEASE_VERSION = getReleaseVersion();
 
 // --- Helper Functions ---
 const log = {
@@ -46,7 +60,7 @@ async function askForConfirmation(question) {
     input: process.stdin,
     output: process.stdout,
   });
-  const answer = await rl.question(log.prompt(`${question} (y/N) `));
+  const answer = await rl.question(log.prompt(`${question} (Y/n) `));
   rl.close();
   return answer.toLowerCase().trim();
 }
@@ -81,6 +95,20 @@ async function checkPrerequisites() {
   log.success("Prerequisites met.");
 }
 
+async function buildTest() {
+  log.info("Running tests and building documentation...");
+  try {
+    await run("pnpm", ["lint"]);
+    await run("pnpm", ["test"]);
+  } catch (error) {
+    log.error("Tests or documentation build failed.");
+    console.error(error);
+    process.exit(1);
+  }
+
+  log.success("Tests and documentation build completed successfully.");
+}
+
 // --- Main Script ---
 async function main() {
   log.info("Starting release process...");
@@ -89,27 +117,45 @@ async function main() {
   }
 
   await checkPrerequisites();
+  if (SKIP_BUILDTEST) {
+    log.info("Skipping build tests.");
+  } else {
+    log.info("Starting build tests.");
+    await buildTest();
+  }
 
   // 1. Run changelogen to bump version and update changelog
   log.info("Bumping version and generating changelog with changelogen...");
+  if (RELEASE_VERSION) {
+    log.info(`Using manually specified version: ${RELEASE_VERSION}`);
+  }
+
+  // Build changelogen arguments
+  const changelogPreviewArgs = ["changelogen@latest", "--no-output"];
+  const changelogBumpArgs = ["changelogen@latest", "--bump"];
+  if (RELEASE_VERSION) {
+    changelogPreviewArgs.push("-r", RELEASE_VERSION);
+    changelogBumpArgs.push("-r", RELEASE_VERSION);
+  }
+
   if (DRY_RUN) {
     log.info("Previewing changelog generation...");
     // We use execa directly here to bypass the dry-run logic of our `run` helper
     // and show a preview of what changelogen will do.
-    await execa("pnpx", ["changelogen@latest", "--no-output"], {
+    await execa("pnpx", changelogPreviewArgs, {
       stdio: "inherit",
     });
     const continueAnswer = await askForConfirmation(
       "Apply file changes and continue with dry-run?",
     );
-    if (continueAnswer !== "y" && continueAnswer !== "yes") {
+    if (continueAnswer === "n" || continueAnswer === "N") {
       log.info("Dry-run aborted by user.");
       process.exit(0);
     }
     log.info("Applying changelog changes to proceed with dry-run...");
-    await execa("pnpx", ["changelogen@latest", "--bump"], { stdio: "inherit" });
+    await execa("pnpx", changelogBumpArgs, { stdio: "inherit" });
   } else {
-    await run("pnpx", ["changelogen@latest", "--bump"]);
+    await run("pnpx", changelogBumpArgs);
   }
 
   // 2. Get version from the updated package.json
@@ -125,41 +171,48 @@ async function main() {
 
   // 3. Extract release notes from CHANGELOG.md
   log.info("Extracting release notes from CHANGELOG.md...");
-  const changelog = fs.readFileSync(CHANGELOG_PATH, "utf-8");
-  const lines = changelog.split("\n");
 
-  const versionHeader = `## ${tag}`;
-  const startIndex = lines.findIndex((line) => line.startsWith(versionHeader));
+  function extractReleaseNotes() {
+    const changelog = fs.readFileSync(CHANGELOG_PATH, "utf-8");
+    const lines = changelog.split("\n");
 
-  if (startIndex === -1) {
-    log.error(
-      `Could not find release notes for version ${tag} in CHANGELOG.md.`,
+    const versionHeader = `## ${tag}`;
+    const startIndex = lines.findIndex((line) =>
+      line.startsWith(versionHeader),
     );
-    process.exit(1);
-  }
 
-  // Find the end of the section for the current version
-  let endIndex = lines.findIndex(
-    (line, index) => index > startIndex && line.startsWith("## v"),
-  );
-  if (endIndex === -1) {
-    endIndex = lines.length;
-  }
+    if (startIndex === -1) {
+      log.error(
+        `Could not find release notes for version ${tag} in CHANGELOG.md.`,
+      );
+      process.exit(1);
+    }
 
-  // Find the '[compare changes]' link to start the notes from there
-  const sectionLines = lines.slice(startIndex, endIndex);
-  const notesStartIndex = sectionLines.findIndex((line) =>
-    line.startsWith("[compare changes]"),
-  );
-
-  if (notesStartIndex === -1) {
-    log.error(
-      `Could not find '[compare changes]' link for version ${tag} in CHANGELOG.md.`,
+    // Find the end of the section for the current version
+    let endIndex = lines.findIndex(
+      (line, index) => index > startIndex && line.startsWith("## v"),
     );
-    process.exit(1);
+    if (endIndex === -1) {
+      endIndex = lines.length;
+    }
+
+    // Find the '[compare changes]' link to start the notes from there
+    const sectionLines = lines.slice(startIndex, endIndex);
+    const notesStartIndex = sectionLines.findIndex((line) =>
+      line.startsWith("[compare changes]"),
+    );
+
+    if (notesStartIndex === -1) {
+      log.error(
+        `Could not find '[compare changes]' link for version ${tag} in CHANGELOG.md.`,
+      );
+      process.exit(1);
+    }
+
+    return sectionLines.slice(notesStartIndex).join("\n").trim();
   }
 
-  const releaseNotes = sectionLines.slice(notesStartIndex).join("\n").trim();
+  let releaseNotes = extractReleaseNotes();
 
   if (!releaseNotes) {
     log.error("Extracted release notes are empty.");
@@ -179,12 +232,12 @@ async function main() {
   // 5. Ask to continue with commit and tag
   if (!DRY_RUN) {
     const answer = await askForConfirmation("Proceed with commit and tag?");
-    if (answer !== "y" && answer !== "yes") {
+    if (answer === "n" || answer === "N") {
       log.info("Release aborted by user.");
       const revertAnswer = await askForConfirmation(
         "Revert changes to package.json and CHANGELOG.md?",
       );
-      if (revertAnswer === "y" || revertAnswer === "yes") {
+      if (revertAnswer !== "n" && revertAnswer !== "N") {
         await run("git", ["checkout", "package.json", "CHANGELOG.md"]);
         log.success("Changes have been reverted.");
       }
@@ -208,12 +261,12 @@ async function main() {
   // 8. Ask to push
   if (!DRY_RUN) {
     const answer = await askForConfirmation("Push commit and tags to remote?");
-    if (answer !== "y" && answer !== "yes") {
+    if (answer === "n" || answer === "N") {
       log.info("Push aborted by user.");
       const revertAnswer = await askForConfirmation(
         "Revert local commit and tag?",
       );
-      if (revertAnswer === "y" || revertAnswer === "yes") {
+      if (revertAnswer !== "n" && revertAnswer !== "N") {
         log.info("Reverting local commit and tag...");
         await run("git", ["reset", "--soft", "HEAD~1"]);
         await run("git", ["tag", "-d", tag]);
@@ -236,7 +289,9 @@ async function main() {
 
   // 10. Create a GitHub release
   log.info("Creating GitHub release...");
-  await run("gh", [
+  // Re-extract the changelog, which may have been edited in the review step
+  releaseNotes = extractReleaseNotes();
+  const releaseArgs = [
     "release",
     "create",
     tag,
@@ -244,7 +299,15 @@ async function main() {
     tag,
     "--notes",
     releaseNotes,
-  ]);
+  ];
+
+  // Add --prerelease flag if version contains a dash (alpha, beta, rc, etc.)
+  if (version.includes("-")) {
+    releaseArgs.push("--prerelease");
+    log.info("Pre-release detected. Adding --prerelease flag.");
+  }
+
+  await run("gh", releaseArgs);
 
   if (DRY_RUN) {
     await execa("git", ["checkout", "package.json", "CHANGELOG.md"], {
