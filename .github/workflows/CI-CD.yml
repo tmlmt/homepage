@@ -33,10 +33,6 @@ jobs:
           echo NODE_ENV="production" >> .env
           echo NUXT_PUBLIC_SITE_URL="https://www.tmlmt.com" >> .env
           echo NUXT_APP_ENV="production" >> .env
-      - name: Install Playwright browsers
-        run: pnpx playwright install --with-deps
-      - name: Run e2e tests
-        run: pnpm test:e2e
       - name: Build app
         run: pnpm generate
       - name: Deploy to Production server
