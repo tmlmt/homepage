@@ -1,5 +1,17 @@
 # Changelog
 
+## v3.2.1
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v3.2.0...v3.2.1)
+
+### ✅ Tests
+
+- Remove playwright tests ([108b10f](https://github.com/tmlmt/homepage/commit/108b10f))
+
+### ❤️ Contributors
+
+- Thomas Lamant ([@tmlmt](https://github.com/tmlmt))
+
 ## v3.2.0
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v3.1.0...v3.2.0)
