@@ -13,8 +13,6 @@ useSeoMeta({
 
 <template>
   <div class="flex h-full w-full flex-col items-center md:justify-center">
-    <main>
-      <slot />
-    </main>
+    <slot />
   </div>
 </template>
