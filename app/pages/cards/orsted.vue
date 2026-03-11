@@ -28,7 +28,7 @@ definePageMeta({
         alt="Thomas Lamant"
       />
     </div>
-    <div class="mx-2 mb-5 grid h-full grid-cols-12">
+    <div class="mx-2 mb-12 grid h-full grid-cols-12">
       <div class="col-span-12 mb-8 flex flex-col items-center">
         <h1 class="text-gradient-blue my-0 text-4xl font-bold">
           Thomas Lamant
