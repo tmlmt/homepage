@@ -42,19 +42,19 @@ definePageMeta({
         <i class="pi pi-briefcase" />
       </div>
       <div class="col-span-10 my-2">
-        <p>Lead Category Manager<br >Foundations Primary Structures</p>
+        <p>Lead Category Manager<br />Foundations Primary Structures</p>
       </div>
       <div class="col-span-2 flex items-center justify-center">
         <i class="pi pi-users" />
       </div>
       <div class="col-span-10 my-2">
-        <p>Offshore Category Strategy<br >Procurement</p>
+        <p>Foundations Procurement<br />EPC</p>
       </div>
       <div class="col-span-2 flex items-center justify-center">
         <i class="pi pi-map-marker" />
       </div>
       <div class="col-span-10 my-2">
-        <p>Nesa Allé 1<br >2820 Gentofte<br >Denmark</p>
+        <p>Nesa Allé 1<br />2820 Gentofte<br />Denmark</p>
       </div>
       <div class="col-span-2 flex items-center justify-center">
         <i class="pi pi-envelope" />
