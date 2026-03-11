@@ -1,5 +1,36 @@
 # Changelog
 
+## v3.2.0
+
+[compare changes](https://github.com/tmlmt/homepage/compare/v3.1.0...v3.2.0)
+
+### 🚀 Enhancements
+
+- **orsted:** Update department name ([1929d5a](https://github.com/tmlmt/homepage/commit/1929d5a))
+
+### 🩹 Fixes
+
+- **cards:** Ensure header image takes full width ([02fd331](https://github.com/tmlmt/homepage/commit/02fd331))
+
+### 🏡 Chore
+
+- Silence ts error related to vite mismatch between nuxt and @tailwindcss/vite ([e302ea8](https://github.com/tmlmt/homepage/commit/e302ea8))
+- **release:** Upgrade release script to latest version ([b6d6c47](https://github.com/tmlmt/homepage/commit/b6d6c47))
+- **icons:** Fix import of primeicons ([def9e39](https://github.com/tmlmt/homepage/commit/def9e39))
+- **release:** Fix tests ([0256ec5](https://github.com/tmlmt/homepage/commit/0256ec5))
+
+### ✅ Tests
+
+- Update e2e snapshots ([3fa7712](https://github.com/tmlmt/homepage/commit/3fa7712))
+
+### 🎨 Styles
+
+- **orsted:** Add extra bottom margin to card ([6c0bff7](https://github.com/tmlmt/homepage/commit/6c0bff7))
+
+### ❤️ Contributors
+
+- Thomas Lamant <tom@tmlmt.com>
+
 ## v3.1.0
 
 [compare changes](https://github.com/tmlmt/homepage/compare/v3.0.2...v3.1.0)
