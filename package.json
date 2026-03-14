@@ -3,7 +3,7 @@
   "author": "Thomas Lamant <tom@tmlmt.com> (https://github.com/tmlmt)",
   "description": "Thomas Lamant's homepage",
   "repository": "github:tmlmt/homepage",
-  "packageManager": "pnpm@10.32.0",
+  "packageManager": "pnpm@10.32.1",
   "private": false,
   "type": "module",
   "scripts": {
