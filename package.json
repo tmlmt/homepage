@@ -31,7 +31,7 @@
     "prettier": "3.8.1",
     "prettier-plugin-tailwindcss": "0.7.2",
     "typescript": "5.9.3",
-    "vue-tsc": "3.2.5"
+    "vue-tsc": "3.2.8"
   },
   "dependencies": {
     "nuxt-umami": "3.2.1",
